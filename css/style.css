@@ -14,7 +14,7 @@ h2 {
 	font-weight: 500;
 	font-size: 34px;
 	color: #333;
-	text-transform: uppercase;
+	
 }
 h3 {
 	font-size: 22px;
@@ -157,7 +157,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .btn-custom {
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #72a411;
+	background-color: #d3db2e;
 	border: 0;
 	padding: 14px 20px;
 	margin: 0;
@@ -306,7 +306,41 @@ header .intro-text {
     height: auto;
 }
 
+/*prevent*/
+.prevent {
+ /* Fondo semitransparente */
+    padding: 50px;
+    border-radius: 10px;
+}
 
+.prevent h1 {
+	color: #38465A;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.prevent h2 {
+    font-size: 36px;
+    color:#38465A;
+	
+}
+
+.prevent button {
+    background-color:#d3db2e;
+    color: white;
+    padding: 1px 20px;
+    border-radius: 5px;
+    border: none;
+	font-weight: 700;
+	height: 40px;
+    cursor: pointer;
+	font-size: 28px;
+}
+
+.prevent p {
+    font-size: 20px;
+    margin-top: 20px;
+}
 
 
 
@@ -349,7 +383,7 @@ header .intro-text {
 
 /* Team Section */
 #team1 {
-	color: #ffffff;
+	
 	
 }
 
@@ -492,7 +526,7 @@ header .intro-text {
 
   #box {
 	background-color: transparent;
-		border: 2px solid #72a411;/* Fondo verde para el cuadro */
+		border: 2px solid #d3db2e;/* Fondo verde para el cuadro */
 	padding: 20px; /* Espaciado interno para que los elementos no estén pegados al borde */
 	border-radius: 10px; 
 	max-height: 160px;/* Bordes redondeados */
@@ -672,7 +706,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#779936', end
 	  
 	  #box {
 		background-color: transparent;
-			border: 2px solid #72a411;/* Fondo verde para el cuadro */
+			border: 2px solid #d3db2e;/* Fondo verde para el cuadro */
 		padding: 20px; /* Espaciado interno para que los elementos no estén pegados al borde */
 		border-radius: 10px; /* Bordes redondeados */
 		text-align: center;
