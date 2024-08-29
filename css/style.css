@@ -793,6 +793,38 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#779936', end
 		.precio-original, .precio-descuento {
 			font-size: 14px;
 		}
+		.prevent h1 {
+			color: #38465A;
+			font-size: 10px;
+			margin-bottom: 10px;
+		}
+		
+		.prevent h2 {
+			font-size: 18px;
+			color:#38465A;
+			
+		}
+		
+		.prevent button {
+			background-color:#d3db2e;
+			color: white;
+			padding: 1px 20px;
+			border-radius: 5px;
+			border: none;
+			font-weight: 700;
+			height: 40px;
+			cursor: pointer;
+			font-size: 13px;
+		}
+		
+		.prevent p {
+			font-size: 20px;
+			margin-top: 20px;
+		}
+		.prevent img{
+			width: 80px;
+		}
+		
 	}
 	
 	@media (max-width: 480px) {
