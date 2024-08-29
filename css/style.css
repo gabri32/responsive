@@ -577,6 +577,10 @@ color: #ffffff;
 	font-size: 28px;
 	color: #ffffff;
   }
+  .precio-descuento span {
+	font-size: 15px;
+	color: #000000;
+  }
 
   /*testimonials*/
 
