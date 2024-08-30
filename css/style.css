@@ -295,7 +295,7 @@ header .intro-text img{
 }
 
 .about-img {
-    float: left; /* Align image to the left */
+   /* Align image to the left */
   max-width: 300px;
   margin-left:  -15px;/* Adjust the maximum width as needed */
  
@@ -303,11 +303,13 @@ header .intro-text img{
 }
 
 .about-text {
-    margin-left: 10%; /* Adjust the left margin to compensate for the image */
+    margin-left: 10%; 
+	align-items: end;
+	line-height: 15px;/* Adjust the left margin to compensate for the image */
 }
 .about-text h2 {
     font-family: fat;
-    line-height: 0%; /* Reduce la línea de separación */
+	line-height: 5px;/* Reduce la línea de separación */
     font-size: 120%;
 }
 
@@ -315,16 +317,16 @@ header .intro-text img{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #B7CD02;
-    font-size: 140%;
-    line-height: 1.1; /* Reduce la línea de separación */
+    font-size: 120%;
+  /* Reduce la línea de separación */
 }
 
 .about-text h4 {
     font-family: fat;
-    font-size: 60%;
+    font-size: 50%;
     text-align: end;
     max-width: 80%;
-    line-height: 1%; /* Reduce la línea de separación */
+    line-height: 50%; /* Reduce la línea de separación */
 }
 
 .about-text h5 {
@@ -334,7 +336,7 @@ header .intro-text img{
     color: #B7CD02;
     text-align: end;
     width: 80%;
-    margin-left: -22%;
+    margin-left: -12%;
 }
 .image-and-text {
     display: flex;
@@ -344,32 +346,86 @@ header .intro-text img{
 }
 
 .image-and-text img {
-    max-width: 10%;
+    max-width: 25%;
 
 }
 
 .about-text p {
-    max-width: 700px;
+    max-width: 60%;
     font-size: 50%;
 }
-
+@media screen and (max-width: 768px) {
+	.about-text {
+		margin-left: -120px;
+		align-items: center;
+		line-height: 15px;/* Adjust the left margin to compensate for the image */
+	}
+	.about-text h2 {
+		font-family: fat;
+		line-height: 5px;/* Reduce la línea de separación */
+		font-size: 120%;
+	}
+	
+	.about-text h3 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		color: #B7CD02;
+		font-size: 120%;
+	  /* Reduce la línea de separación */
+	}
+	
+	.about-text h4 {
+		font-family: fat;
+		font-size: 50%;
+		text-align: end;
+		max-width: 80%;
+		line-height: 50%; /* Reduce la línea de separación */
+	}
+	
+	.about-text h5 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 40%;
+		line-height: 1.2; /* Reduce la línea de separación */
+		color: #B7CD02;
+		text-align: end;
+		width: 80%;
+		margin-left: -12%;
+	}
+	.image-and-text img {
+		max-width: 8%;
+		margin-top: -60px;
+       	margin-left: 130px;
+		
+	}
+	
+	.about-text p {
+		max-width: 60%;
+		font-size: 50%;
+		margin-left:-20px; ;
+		margin-top: 40px;
+	}	
+	.about-img {
+		float: left; /* Align image to the left */
+	  max-width: 200px;
+	  margin-left:  -15px;
+	  margin-top: 130px;
+	  /* Adjust the maximum width as needed */
+	 
+	
+	}
+}
 /* Responsive adjustments using relative units */
 .about-img img {
-    max-width: 100%; /* Ensure the image scales responsively */
+    max-width: 100%; /* the image scales responsively */
 }
 
 .about-text {
     font-size: clamp(2rem, 5vw, 4rem); /* Adjust font size based on viewport width */
 }
+
 /* Menu Section */
 
-#restaurant-menu .section-title {
-	background: #444 url('../assets/images/fondo-tela-blanca-onda-suave.jpg') center center no-repeat fixed;
-	background-size: cover;
-}
-#restaurant-menu .section-title h2 {
-	color: #fff;
-}
+
 
 .baner {
     display: flex;
