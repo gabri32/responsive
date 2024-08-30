@@ -184,11 +184,12 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     width: 100%;
     padding: 0;
     background-color: #e5e5e5;
-    background-image: url('../assets/images/image_front_page.png'); /* Ruta de la imagen */
+    background-image: url('/assets/images/image_front_page.png'); /* Ruta de la imagen */
     background-size: cover; /* Hace que la imagen cubra todo el contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen en el contenedor */
-    height: 100vh;
+   
+
 	 /* Opcional: Ajusta la altura al 100% del viewport */
 }
 
@@ -204,6 +205,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-size: em;
 	font-weight: 700;
 	margin-top: 0;
+	font-size: 150%;
 	margin-bottom: 10px;
 }
 .intro span {
@@ -213,12 +215,12 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .intro p {
 	color: #fff;
-	font-size: 32px;
+	font-size: 120%;
 	font-weight: 300;
 	line-height: 0.8;
 	margin-top: 10px;
 	margin-bottom: 40px;
-	max-width: 750px;
+	max-width: 70%;
 }
 header .intro-text {
 	padding-top: 250px;
@@ -230,23 +232,13 @@ header .intro-text {
 	
 }
 header .intro-text img{
-	max-width: 70%;
+	width: 30%;
 
 }
 
 
 @media screen and (max-width: 968px) {
-	.intro {
-		display: table;
-		width: 100%;
-		padding: 0;
-		
-		background-image: url('../assets/images/wallpaper_general.jpg'); /* Ruta de la imagen */
-		background-size: cover; /* Hace que la imagen cubra todo el contenedor */
-		background-repeat: no-repeat; /* Evita que la imagen se repita */
-		background-position: center; /* Centra la imagen en el contenedor */
-		height: 60vh	 /* Opcional: Ajusta la altura al 100% del viewport */
-	}
+	
 	
 	
 .intro .overlay {
@@ -758,11 +750,12 @@ font-size: 15px;
   
   #icon {
 	max-width: 100%;
-	padding: 20px; /* Asegura que las imágenes sean responsive */
+	padding: 5px; /* Asegura que las imágenes sean responsive */
 	min-height: 90px;
   }
+
   #text2{
-	font-size: 350%;
+	font-size: 400%;
 	color: rgb(249, 249, 249);
 	font-weight: bold;
   }
@@ -805,7 +798,6 @@ font-size: 15px;
     display: flex;
     gap: 10px; /* Espacio de 20px entre las cajas de precio */
     margin-top: 20px;
-
     width: 100%;
 
 
@@ -835,6 +827,7 @@ font-size: 15px;
 }
 .precio-titulo span {
    font-size: 80%;
+ 
 	
 }
 .precio-original {
@@ -845,6 +838,7 @@ color: #ffffff;
 .precio-descuento {
 	font-size: 100%;
 	color: #ffffff;
+	text-align: end;
   }
   .precio-descuento span {
 	font-size: 100%;
@@ -856,7 +850,7 @@ color: #ffffff;
 		gap: 10px; /* Espacio de 20px entre las cajas de precio */
 		margin-top: 20px;
 	width: 100%;
-	height: 280px;
+	height: 180px;
 
 	
 	}
@@ -873,60 +867,94 @@ color: #ffffff;
   }
 
   /*testimonials*/
+  .testimonials {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.tarjeta {
+    position: relative;
+	background: linear-gradient(to bottom, #ffffff00 50%, #b5d33d 50%);
+
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    width: 250px;
+	transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.tarjeta img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+	transition: transform 0.5s ease;
+}
+
+.tarjeta h3 {
+    font-size: 1.2em;
+
+	color: #000000;
+}
+
+.tarjeta p {
+    font-size: 0.9em;
+    margin-bottom: 15%;
+	color: #B6CD01;
+}
+.tarjeta:hover img {
+    transform: scale(1.1) rotate(-2deg);
+}
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+.tarjeta .description {
+   
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 90%;
+    }
+}
 /* Team Section */
-#team {
-	color: #fff;
-	background-size: cover;
-}
-#team .overlay {
-	padding: 120px 0 80px 0;
-	background: rgba(0, 0, 0, 0.6);
-}
-#team h2, #team p {
-	color: #fff;
-}
-#team hr {
-	background: #fff;
-}
-#team h3 {
-	color: #fff;
-	font-weight: 400;
-	font-size: 20px;
-	margin: 5px 0;
-}
-#team img {
-	width: 80px;
-}
-#team .thumbnail {
-	background: transparent;
-	border: 0;
-}
-#team .thumbnail .team-img {
-	display: inline-block;
-	position: relative;
-}
-#team .thumbnail .team-img:before {
-	display: block;
-	content: '';
-	position: absolute;
-	top: 15px;
-	
-	bottom: 10px;
-	left: 1px;
-	width: 100px;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-}
-#team .thumbnail .caption {
-	padding-top: 10px;
-}
-#team .thumbnail .caption p {
-	color: rgba(255,255,255,0.7);
-	padding: 0 10px;
-	font-size: 15px;
-}
-
-
 
 
 /* Footer Section*/
