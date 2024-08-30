@@ -1,14 +1,16 @@
 body, html {
-	font-family: 'Raleway', sans-serif;
-	text-rendering: optimizeLegibility !important;
-	-webkit-font-smoothing: antialiased !important;
-	color: #777;
-	background: url(assets/images/wallpaper_general.jpg)no-repeat ;
-	font-weight: 300;
-	width: 100% !important;
-	height: 100% !important;
-	overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    color: #777;
+    background: url(../assets/images/wallpaper_general.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-weight: 300;
+    width: 100% !important;
+    height: 100% !important;
+    overflow-x: hidden;
 }
+
 @font-face {
 	font-family: 'fat';
 	src: url("/fonts/fonts/AdventuresUnlimited-ScriptBold.ttf");
@@ -238,8 +240,8 @@ header .intro-text img{
 		display: table;
 		width: 100%;
 		padding: 0;
-		background-color: #e5e5e5;
-		background-image: url('../assets/images/image_front_page.png'); /* Ruta de la imagen */
+		
+		background-image: url('../assets/images/wallpaper_general.jpg'); /* Ruta de la imagen */
 		background-size: cover; /* Hace que la imagen cubra todo el contenedor */
 		background-repeat: no-repeat; /* Evita que la imagen se repita */
 		background-position: center; /* Centra la imagen en el contenedor */
