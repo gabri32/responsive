@@ -152,7 +152,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .section-title p {
 	font-size: 22px;
-	color: rgba(255,255,255,0.8);
+	color: rgba(0, 0, 0, 0.8);
 }
 .section-title hr {
 	margin: 0 auto;
@@ -191,8 +191,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 
 .intro .overlay {
-	background: rgba(0,0,0,0.4);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
+
+
 
 .intro h1 {
 	font-family: 'arial', cursive;
@@ -230,6 +232,7 @@ header .intro-text img{
 
 }
 
+
 @media screen and (max-width: 968px) {
 	.intro {
 		display: table;
@@ -240,13 +243,13 @@ header .intro-text img{
 		background-size: cover; /* Hace que la imagen cubra todo el contenedor */
 		background-repeat: no-repeat; /* Evita que la imagen se repita */
 		background-position: center; /* Centra la imagen en el contenedor */
-		height: 75vh;
-		 /* Opcional: Ajusta la altura al 100% del viewport */
+		height: 60vh	 /* Opcional: Ajusta la altura al 100% del viewport */
 	}
 	
-	.intro .overlay {
-		background: rgba(0,0,0,0.4);
-	}
+	
+.intro .overlay {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
 	
 	.intro h1 {
 		font-family: 'arial', cursive;
@@ -262,13 +265,13 @@ header .intro-text img{
 	
 	}
 	.intro p {
-		color: #ffffff00;
+		color: #ffffff;
 		font-size: 10px;
 		font-weight: 300;
+		max-width: 200px;
 		line-height: 0.8;
 		margin-top: 10px;
-		margin-bottom: 40px;
-		max-width:250px;
+		
 	}
 	header .intro-text {
 		margin-top: 150px;
@@ -452,7 +455,11 @@ position: relative;
 	padding: 50px;
 }
 
-
+.highlight{
+	font-family: fat;
+	font-size: 50px;
+	color: black;
+}
 
 .first h3 {
     margin-top: 20px;
