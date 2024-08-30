@@ -13,7 +13,7 @@ body, html {
 
 @font-face {
 	font-family: 'fat';
-	src: url("/fonts/fonts/AdventuresUnlimited-ScriptBold.ttf");
+	src: url(../fonts/fonts/AdventuresUnlimited-ScriptBold.ttf);
   }
 h2 {
 	margin: 0 0 20px 0;
