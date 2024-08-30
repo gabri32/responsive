@@ -407,7 +407,7 @@ top:20px;
 
 .img-responsive{
 	border-radius: 15px;
-margin-bottom: -50px;
+margin-bottom: -20px;
 position: relative;
 width: 200px;
 	
@@ -416,11 +416,11 @@ width: 200px;
 
 .about-text p{
 	color: #5D6167;
-	max-width: 150px;
+	max-width: 130px;
 	font-size: 8px;
 	margin-bottom: 150px;
 bottom: 10px;
-right: -230px;
+right: -220px;
 position: relative;
 	
 }
@@ -439,20 +439,20 @@ position: relative;
 .baner {
     display: flex;
     justify-content: space-between;
-    background-color: #d3db2e;
-    
     color: #ffffff;
 }
 .baner p{
-	color: #F6F6F6;;
+
+	color: #000000;;
 }
 .tipo p{color: #000000;}
 
 .first {
 	width: 50%;
-    background-color: #d3db2e;
+    background-color: #B7CD02;
     color: #000000;
 	padding: 50px;
+	max-height: 500px;
 }
 
 .highlight{
@@ -462,12 +462,12 @@ position: relative;
 }
 
 .first h3 {
-    margin-top: 20px;
-    color: #0000;
+    
+    color: #000000;
 }
 
 .tipo {
-    margin-top: 15px;
+    
 }
 
 .second {
@@ -491,6 +491,33 @@ position: relative;
     margin-right: 10px;
     width: 50px;
     height: auto;
+}
+@media screen and (max-width: 768px) {
+  .first{
+font-size: 10px;	
+}
+.baner p{
+font-size: 15px;
+	color: #000000;
+	
+}
+.highlight{
+	font-family: fat;
+	font-size: 30px;
+	color: black;
+}
+.tipo ul{
+	font-size: 10px;
+	
+}
+.tipo{
+	margin-top: -10px;
+}
+.first h3 {
+    font-size: 11px;
+    color: #000000;
+	margin-bottom: 20px;
+}
 }
 
 /*prevent*/
