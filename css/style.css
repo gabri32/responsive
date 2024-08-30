@@ -698,39 +698,38 @@ font-size: 15px;
   /*inversion*/
 
 #bluedark{
-	max-height: 900px;
+	max-height: 700px;
 	background-color: #0f1517ef;
-	align-items: center;
-	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.973);/* Espacio entre los elementos, puedes ajustar este valor */ /* Tamaño del texto */
-}
-#bluedark p{
-	color: white;
-	text-align: center;
 	
-	padding: 20px;
-	font-size: 20px;
-	max-width: 1000px;
 }
+.text-center{
+	align-items: center;
+}
+
 #texttitleicon {
 	line-height: 0.8; /* Ajusta este valor para hacer el salto de línea más pequeño */
-	margin: 0; /* Remueve márgenes por defecto para controlar el espacio */
+	margin: 0; 
+
+	
   }
   
   #texttitleicon span {
 	margin: 0;
+
 	display: block; /* Asegura que el texto "𝔂 𝓻𝓮𝓷𝓽𝓪𝓫𝓲𝓵𝓲𝓭𝓪𝓭" se comporte como un bloque en su propia línea */
   }
 #bluedark h2{
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 30px;
-	padding: 20px;
+	font-size: 250%;
+	padding: 10px;
 	color: white;
 	max-width: 900px;
-	transform: translate(-0%);
+	margin-right: 0%;
 }
-#finaltitle p {
+#bluedark p {
 	color: #ffffff;
-	font-size: 25px;
+	font-size: 0px;
+	margin-right: 0%;
 }
 
 #input {
@@ -749,61 +748,66 @@ font-size: 15px;
 	border-radius: 10px; 
 	max-height: 160px;/* Bordes redondeados */
 	text-align: center;
-	max-width: 5000px; /* Ancho máximo del cuadro */
+	width: 26%; /* Ancho máximo del cuadro */
 	box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.973);
 	justify-content: space-between;
-	margin-bottom: 30px; /* Sombra para darle un efecto de elevación */
+	margin-bottom: 5%;
+	font-size: 20%
+	 /* Sombra para darle un efecto de elevación */
   }
   
   #icon {
-	max-width: 100px;
+	max-width: 100%;
 	padding: 20px; /* Asegura que las imágenes sean responsive */
 	min-height: 90px;
   }
-  
+  #text2{
+	font-size: 350%;
+	color: rgb(249, 249, 249);
+	font-weight: bold;
+  }
  
   
 
 
   #yellow {
     background-color: #73a4116b;
-
-  
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
     height: 100%; /* Ajusta la altura según tus necesidades */
 }
-
+.imagenfam{
+	max-width: 40%;
+}
 .container {
     display: flex;
     align-items: flex-start;
     width: 100%;
 }
 
-.imagen {
-    height: 100%; /* Ajusta la altura al 100% del contenedor #yellow */
-    width: auto;
-    object-fit: cover;
-}
 
 .texto {
-	padding: 40px;
+	padding: 4%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     flex: 1;
+	
 	text-align: end;
 	
 }
-
+.texto h2{
+	font-size: 150%;
+}
 .precio-box-container {
     display: flex;
-    gap: 20px; /* Espacio de 20px entre las cajas de precio */
+    gap: 10px; /* Espacio de 20px entre las cajas de precio */
     margin-top: 20px;
-    justify-content: flex-end;
-    width: 100%
+
+    width: 100%;
+
 
 }
 
@@ -812,29 +816,60 @@ font-size: 15px;
     padding: 20px;
     text-align: left;
 	border-radius: 10px;
-	
+    width: 50%;
+	font-size: 150%;
 
 }
 
+	
+
 .precio-titulo {
-    font-size: 25px;
+    
     font-weight: bold;
 	color: #38465A;
 	
 }
-
+.precio-titulo img {
+    width: 10%;
+	
+}
+.precio-titulo span {
+   font-size: 80%;
+	
+}
 .precio-original {
-    font-size: 18px;
+    font-size: 100%;
 	text-align: end;
 color: #ffffff;
 }
 .precio-descuento {
-	font-size: 28px;
+	font-size: 100%;
 	color: #ffffff;
   }
   .precio-descuento span {
-	font-size: 15px;
+	font-size: 100%;
 	color: #000000;
+  }
+  @media screen and (max-width: 768px) {
+	.precio-box-container {
+		display: flex;
+		gap: 10px; /* Espacio de 20px entre las cajas de precio */
+		margin-top: 20px;
+	width: 100%;
+	height: 280px;
+
+	
+	}
+	.precio-box {
+		background-color: #B6CD01; /* Ajusta el color verde según tu preferencia */
+		padding: 20px;
+		text-align: left;
+		border-radius: 10px;
+		width: 95%;
+		height: 50%;
+		font-size: 150%;
+	
+	}
   }
 
   /*testimonials*/
