@@ -9,6 +9,10 @@ body, html {
 	height: 100% !important;
 	overflow-x: hidden;
 }
+@font-face {
+	font-family: 'fat';
+	src: url("/fonts/fonts/AdventuresUnlimited-ScriptBold.ttf");
+  }
 h2 {
 	margin: 0 0 20px 0;
 	font-weight: 500;
@@ -225,7 +229,8 @@ header .intro-text img{
 	max-width: 70%;
 
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 968px) {
 	.intro {
 		display: table;
 		width: 100%;
@@ -235,7 +240,7 @@ header .intro-text img{
 		background-size: cover; /* Hace que la imagen cubra todo el contenedor */
 		background-repeat: no-repeat; /* Evita que la imagen se repita */
 		background-position: center; /* Centra la imagen en el contenedor */
-		height: 100vh;
+		height: 75vh;
 		 /* Opcional: Ajusta la altura al 100% del viewport */
 	}
 	
@@ -257,7 +262,7 @@ header .intro-text img{
 	
 	}
 	.intro p {
-		color: #fff;
+		color: #ffffff00;
 		font-size: 10px;
 		font-weight: 300;
 		line-height: 0.8;
@@ -283,37 +288,143 @@ header .intro-text img{
 /* About Section */
 #about {
 	padding: 120px 0;
+
 }
 #about h3 {
 	font-size: 20px;
 	
 }
-#about .about-text {
-	margin-left: 10px;
+#about .about-text h2 {
+	margin-left: -210px;
+	margin-top:-50px;
+
+font-family:fat;
+
+font-size: 80px;
+top:20px;
+
+
+}
+#about .about-text h3{
+	font-weight: 800;font-family: arial;
+	font-size: 68px;
+	color: #B7CD02;
+	margin-left:-220px;
+	margin-top: -78px;
+
+}
+#about .about-text h4{
+	font-family: 'fat'; margin-left: 10px;font-size:60px ;
+	
+	margin-top:-50px;
+}
+
+#about .about-text h5{
+		 margin-left: 200px;
+	margin-top:-30px;
+	font-size: 20px;
+	color: #B7CD02;
+	font-family: Arial, Helvetica, sans-serif;
+	
 }
 #about .about-img {
 	display: inline-block;
 	position: relative;
 	
+	left: -15px;
+	max-height: 200px;
+	top:180px;
+	border-radius: 15px;
+	
 }
-#about .about-img:before {
-	display: block;
-	content: '';
+
+.img-responsive{
+	border-radius: 15px;
+	max-width: 400px;
+	
+}
+
+.about-text img{
+	max-width: 50px;
+	left: -100px;
 	position: absolute;
-	top: 8px;
-	right: 8px;
-	bottom: 8px;
-	left: 8px;
-	border: 1px solid rgba(255, 255, 255, 0.5);
+	
 }
-#about p {
-	line-height: 24px;
-	margin: 15px 0 30px;
+.about-text p{
+	max-width: 700px;
+	font-size: 25px;
+	margin-right: 55;
 }
+@media screen and (max-width: 968px) {
+	#about {
+		padding: 0px 0;
+	
+	}
+	#about h3 {
+		font-size: 20px;
+	}
+
+	#about .about-text h2 {
+		margin-left: 18px; /* Reducido para adaptarse mejor a pantallas pequeñas */
+		font-family: 'fat';
+		font-size: 20px; /* Tamaño reducido para pantallas móviles */
+		
+		margin-top: -60px;	
+	}
+
+    #about .about-text h3{
+		font-weight: 800;font-family: arial;
+		font-size: 20px;
+		color: #B7CD02;
+		margin-top: -40px;
+		margin-left: 16px;
+	
+	}
+	#about .about-text h4{
+		font-family: 'fat'; margin-left: 10px;font-size:15px ;
+		margin-left: 108px;
+		margin-top:-26px;
+	}
+	#about .about-text h5{
+		margin-left: 152px;
+   margin-top:-15px;
+   font-size: 5px;
+   color: #B7CD02;
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+.about-text img{
+	max-width: 20px;
+	left: 210px;
+	position: absolute;
+	
+}
+
+.img-responsive{
+	border-radius: 15px;
+margin-bottom: -50px;
+position: relative;
+width: 200px;
+	
+}
+
+
+.about-text p{
+	color: #5D6167;
+	max-width: 150px;
+	font-size: 8px;
+	margin-bottom: 150px;
+bottom: 10px;
+right: -230px;
+position: relative;
+	
+}
+}
+
 /* Menu Section */
-#restaurant-menu {
-	padding: 0 0 60px 0;
-}
+
 #restaurant-menu .section-title {
 	background: #444 url('../assets/images/fondo-tela-blanca-onda-suave.jpg') center center no-repeat fixed;
 	background-size: cover;
