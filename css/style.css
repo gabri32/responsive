@@ -182,12 +182,14 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     background-size: cover; /* Hace que la imagen cubra todo el contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen en el contenedor */
-    height: 100vh; /* Opcional: Ajusta la altura al 100% del viewport */
+    height: 100vh;
+	 /* Opcional: Ajusta la altura al 100% del viewport */
 }
 
 .intro .overlay {
 	background: rgba(0,0,0,0.4);
 }
+
 .intro h1 {
 	font-family: 'arial', cursive;
 	color: #b5cd02;
@@ -199,19 +201,84 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .intro span {
 	color: #a7c44c;
 	font-weight: 600;
+
 }
 .intro p {
 	color: #fff;
 	font-size: 32px;
 	font-weight: 300;
+	line-height: 0.8;
 	margin-top: 10px;
 	margin-bottom: 40px;
+	max-width: 750px;
 }
 header .intro-text {
 	padding-top: 250px;
-	padding-bottom: 200px;
-	text-align: center;
+	padding-bottom: 50px;
+	text-align: left;
+	padding-left: 40px;
+	line-height: 0.8;
 	
+	
+}
+header .intro-text img{
+	max-width: 70%;
+
+}
+@media screen and (max-width: 768px) {
+	.intro {
+		display: table;
+		width: 100%;
+		padding: 0;
+		background-color: #e5e5e5;
+		background-image: url('../assets/images/image_front_page.png'); /* Ruta de la imagen */
+		background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+		background-repeat: no-repeat; /* Evita que la imagen se repita */
+		background-position: center; /* Centra la imagen en el contenedor */
+		height: 100vh;
+		 /* Opcional: Ajusta la altura al 100% del viewport */
+	}
+	
+	.intro .overlay {
+		background: rgba(0,0,0,0.4);
+	}
+	
+	.intro h1 {
+		font-family: 'arial', cursive;
+		color: #b5cd02;
+		font-size: 20px;
+		font-weight: 750;
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+	.intro span {
+		color: #a7c44c;
+		font-weight: 600;
+	
+	}
+	.intro p {
+		color: #fff;
+		font-size: 10px;
+		font-weight: 300;
+		line-height: 0.8;
+		margin-top: 10px;
+		margin-bottom: 40px;
+		max-width:250px;
+	}
+	header .intro-text {
+		margin-top: 150px;
+		padding-top: 280px;
+		padding-bottom: 50px;
+		text-align: left;
+		padding-left: 20px;
+		line-height: 0.8;
+		
+		
+	}
+	header .intro-text img{
+		max-width: 50%;
+	
+	}
 }
 /* About Section */
 #about {
@@ -219,6 +286,7 @@ header .intro-text {
 }
 #about h3 {
 	font-size: 20px;
+	
 }
 #about .about-text {
 	margin-left: 10px;
@@ -226,6 +294,7 @@ header .intro-text {
 #about .about-img {
 	display: inline-block;
 	position: relative;
+	
 }
 #about .about-img:before {
 	display: block;
@@ -621,9 +690,60 @@ color: #ffffff;
 
   /*testimonials*/
 
+/* Team Section */
+#team {
+	color: #fff;
+	background-size: cover;
+}
+#team .overlay {
+	padding: 120px 0 80px 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+#team h2, #team p {
+	color: #fff;
+}
+#team hr {
+	background: #fff;
+}
+#team h3 {
+	color: #fff;
+	font-weight: 400;
+	font-size: 20px;
+	margin: 5px 0;
+}
+#team img {
+	width: 80px;
+}
+#team .thumbnail {
+	background: transparent;
+	border: 0;
+}
+#team .thumbnail .team-img {
+	display: inline-block;
+	position: relative;
+}
+#team .thumbnail .team-img:before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 15px;
+	
+	bottom: 10px;
+	left: 1px;
+	width: 100px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+#team .thumbnail .caption {
+	padding-top: 10px;
+}
+#team .thumbnail .caption p {
+	color: rgba(255,255,255,0.7);
+	padding: 0 10px;
+	font-size: 15px;
+}
 
 
-/* Call Reservation Section */
+
 
 /* Footer Section*/
 #footer {
@@ -804,7 +924,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#779936', end
 			color:#38465A;
 			
 		}
-		
+		.line {
+			height: 5px;
+			left: 100px;
+			background: linear-gradient(to right, #d3db2e, #0099006e); /* Degradado de verde claro a verde oscuro */
+		}
 		.prevent button {
 			background-color:#d3db2e;
 			color: white;
