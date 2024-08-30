@@ -302,7 +302,7 @@ header .intro-text img{
 	line-height: 15px;/* Adjust the left margin to compensate for the image */
 }
 .about-text h2 {
-    font-family: fat;
+    font-family: 'fat';
 	line-height: 5px;/* Reduce la línea de separación */
     font-size: 120%;
 }
@@ -316,7 +316,7 @@ header .intro-text img{
 }
 
 .about-text h4 {
-    font-family: fat;
+    font-family: 'fat';
     font-size: 50%;
     text-align: end;
     max-width: 80%;
@@ -355,7 +355,7 @@ header .intro-text img{
 		line-height: 15px;/* Adjust the left margin to compensate for the image */
 	}
 	.about-text h2 {
-		font-family: fat;
+		font-family: 'fat';
 		line-height: 5px;/* Reduce la línea de separación */
 		font-size: 120%;
 	}
@@ -369,7 +369,7 @@ header .intro-text img{
 	}
 	
 	.about-text h4 {
-		font-family: fat;
+		font-family: 'fat';
 		font-size: 50%;
 		text-align: end;
 		max-width: 80%;
@@ -441,7 +441,7 @@ header .intro-text img{
 }
 
 .highlight{
-	font-family: fat;
+	font-family: 'fat';
 	font-size: 50px;
 	color: black;
 }
@@ -491,7 +491,7 @@ font-size: 15px;
 	
 }
 .highlight{
-	font-family: fat;
+	font-family: 'fat';
 	font-size: 30px;
 	color: black;
 }
@@ -1008,7 +1008,7 @@ color: #ffffff;
 
 .question {
 	
-    background-color: #B6CD01;
+    background-color: #b5cd01aa;
     padding: 15px;
 	max-width: 70%;
 	margin-left: 15%;
@@ -1020,7 +1020,9 @@ color: #ffffff;
 	
 }
 .question p{
-	font-size: 80%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	font-weight: bolder;
 }
 
 .answer {
@@ -1039,53 +1041,72 @@ color: #ffffff;
     max-height: 200px; /* Ajusta este valor según la altura máxima esperada */
 }
 /* Footer Section*/
-#footer {
-	background: #262626;
-	padding: 50px 0 0 0;
-}
-#footer h3 {
-	color: #8eb640;
-	font-weight: 400;
-	font-size: 18px;
-	text-transform: uppercase;
-	margin-bottom: 20px;
-}
-#footer .copyrights {
-	padding: 20px 0;
-	margin-top: 50px;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#779936+0,8eb640+50 */
-	background: rgb(119,153,54); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(119,153,54,1) 0%, rgba(142,182,64,1) 50%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(119,153,54,1) 0%, rgba(142,182,64,1) 50%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(119,153,54,1) 0%, rgba(142,182,64,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#779936', endColorstr='#8eb640', GradientType=0 ); /* IE6-9 */
-}
-#footer .social {
-	margin: 20px 0 30px 0;
-}
-#footer .social ul li {
+.footer {
+	background-color: #0F1517;
+	color: #ffffff;
+	padding: 40px 20px;
+	max-height: 300px;
+  }
+  
+  .footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  .footer-logo img {
+	max-height: 80px;
+	padding-left: 20%;
+  }
+  
+  .footer-column {
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	margin-right: 20%;
+  }
+  
+  .footer-column h3 {
+	font-weight: bold;
+	margin-bottom: 15px;
+  }
+  
+  .footer-column ul {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .footer-column ul li {
+	margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 0.3s ease;
+  }
+  
+  .footer-column ul li a:hover {
+	color: #6e9b14;
+  }
+  
+  .footer-socials {
+	margin-top: 20px;
+  }
+  
+  .footer-socials a {
 	display: inline-block;
-	margin: 0 20px;
-}
-#footer .social i.fa {
-	font-size: 26px;
-	padding: 4px;
-	color: #fff;
-	transition: all 0.3s;
-}
-#footer .social i.fa:hover {
-	color: #eee;
-}
-#footer p {
-	font-size: 15px;
-	color: rgba(255,255,255,0.8)
-}
-#footer a {
-	color: #f6f6f6;
-}
-#footer a:hover {
-	color: #333;
-}
+	margin-right: 15px;
+  }
+  
+  .footer-socials img {
+	width: 40px;
+	height: 40px;
+  }
+  
+
 @media screen and (max-width: 768px) {
 	.second {
 		display: grid;
