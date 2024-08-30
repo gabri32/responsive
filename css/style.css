@@ -493,11 +493,17 @@ position: relative;
     height: auto;
 }
 @media screen and (max-width: 768px) {
-  .first{
-font-size: 10px;	
-}
+	.first {
+		width: 50%;
+		background-color: #B7CD02;
+		color: #000000;
+		padding: 20px;
+		max-height: 500px;
+	}
+	
 .baner p{
 font-size: 15px;
+ 
 	color: #000000;
 	
 }
