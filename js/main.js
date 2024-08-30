@@ -1,107 +1,17 @@
+let num = true;
+const questions = document.querySelectorAll('.question');
 
-function main() {
-
-(function () {
-   'use strict';
-   
-  	$('a.page-scroll').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top - 40
-            }, 900);
-            return false;
-          }
-        }
-      });
-
-	
-    // Show Menu on Book
-    $(window).bind('scroll', function() {
-        var navHeight = $(window).height() - 500;
-        if ($(window).scrollTop() > navHeight) {
-            $('.navbar-default').addClass('on');
-        } else {
-            $('.navbar-default').removeClass('on');
-        }
-    });
-
-    $('body').scrollspy({ 
-        target: '.navbar-default',
-        offset: 80
-    });
-
-	// Hide nav on click
-  $(".navbar-nav li a").click(function (event) {
-    // check if window is small enough so dropdown is created
-    var toggle = $(".navbar-toggle").is(":visible");
-    if (toggle) {
-      $(".navbar-collapse").collapse('hide');
-    }
-  });
-	
-  	// Portfolio isotope filter
-    $(window).load(function() {
-        var $container = $('.portfolio-items');
-        $container.isotope({
-            filter: '*',
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-        });
-        $('.cat a').click(function() {
-            $('.cat .active').removeClass('active');
-            $(this).addClass('active');
-            var selector = $(this).attr('data-filter');
-            $container.isotope({
-                filter: selector,
-                animationOptions: {
-                    duration: 750,
-                    easing: 'linear',
-                    queue: false
-                }
-            });
-            return false;
-        });
+questions.forEach(question => {
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;   
+         num =!num;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';   
 
     });
-	
-    // Nivo Lightbox 
-    $('.portfolio-item a').nivoLightbox({
-            effect: 'slideDown',  
-            keyboardNav: true,                            
-        });
-
-}());
-
-
-}
-main();
-let index = 0;
-  const slides = document.querySelectorAll('.slide');
-  const totalSlides = slides.length;
-
-  function showSlide(i) {
-    slides.forEach((slide, index) => {
-      slide.classList.remove('active');
-      if (index === i) {
-        slide.classList.add('active');
-      }
+});
+$(document).ready(function() {
+    $(".elemento").click(function() {
+      console("entra",num)
+        $(this).animate({top: '200px'}, 500);
     });
-  }
-
-  function nextSlide() {
-    index = (index + 1) % totalSlides;
-    showSlide(index);
-  }
-
-  function startCarousel() {
-    showSlide(index);
-    setInterval(nextSlide, 3000); // Cambia la imagen cada 3 segundos
-  }
-
-  document.addEventListener('DOMContentLoaded', startCarousel);
+});

@@ -693,10 +693,9 @@ font-size: 15px;
 	max-height: 700px;
 	background-color: #0f1517ef;
 	
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
-.text-center{
-	align-items: center;
-}
+
 
 #texttitleicon {
 	line-height: 0.8; /* Ajusta este valor para hacer el salto de línea más pequeño */
@@ -707,28 +706,30 @@ font-size: 15px;
   
   #texttitleicon span {
 	margin: 0;
-
 	display: block; /* Asegura que el texto "𝔂 𝓻𝓮𝓷𝓽𝓪𝓫𝓲𝓵𝓲𝓭𝓪𝓭" se comporte como un bloque en su propia línea */
-  }
+
+}
 #bluedark h2{
+	width: calc(59% - 10px);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 250%;
-	padding: 10px;
 	color: white;
 	max-width: 900px;
-	margin-right: 0%;
+
 }
 #bluedark p {
 	color: #ffffff;
 	font-size: 0px;
 	margin-right: 0%;
+	
+	width: calc(75% - 10px);
 }
 
 #input {
 	display: flex;
 	justify-content: center;
-	align-items: flex-end; /* Alinea las imágenes en la parte inferior por defecto */
-	gap: 100px;
+	 /* Alinea las imágenes en la parte inferior por defecto */
+	gap: 80px;
 	margin-bottom: 50px;
 	/* Espacio entre los elementos */
   }
@@ -854,6 +855,20 @@ color: #ffffff;
 
 	
 	}
+	.precio-original {
+		font-size: 100%;
+		text-align: end;
+	color: #ffffff;
+	}
+	
+	.precio-titulo span{
+		font-size: 55%;
+	}
+	  .precio-descuento span {
+		font-size: 50%;
+		color: #000000;
+	  }
+
 	.precio-box {
 		background-color: #B6CD01; /* Ajusta el color verde según tu preferencia */
 		padding: 20px;
@@ -867,6 +882,36 @@ color: #ffffff;
   }
 
   /*testimonials*/
+
+  .content-container {
+	text-align: center;
+	padding: 20px;
+
+}
+.main-heading {
+	font-family: 'Arial', sans-serif;
+	font-size: 5rem;
+	font-weight: normal;
+	color: #000000;
+	
+	line-height: 0.5;
+}
+.accent-text {
+	font-style: italic;
+	color: #b5d33d;
+}
+.bold {
+	font-weight: bold;
+}
+.subheading {
+	font-family: 'Arial', sans-serif;
+	font-size: 25px;
+	color: #5D6167;
+	width: 80%;
+	padding-left: 20%;
+	margin-top: 10px;
+}
+
   .testimonials {
     display: flex;
     justify-content: space-around;
@@ -901,13 +946,13 @@ color: #ffffff;
 }
 
 .tarjeta h3 {
-    font-size: 1.2em;
+    font-size: 1.5em;
 
 	color: #000000;
 }
 
 .tarjeta p {
-    font-size: 0.9em;
+    font-size: 1.8em;
     margin-bottom: 15%;
 	color: #B6CD01;
 }
@@ -930,7 +975,7 @@ color: #ffffff;
    
     padding: 15px;
     border-radius: 10px;
-    font-size: 0.9em;
+    font-size: 1.2em;
 }
 
 .card-overlay {
@@ -954,9 +999,45 @@ color: #ffffff;
         width: 90%;
     }
 }
-/* Team Section */
+/* list */
+.faq {
+    margin: 20px;
+	border-radius: 10px;
+	
+}
 
+.question {
+	
+    background-color: #B6CD01;
+    padding: 15px;
+	max-width: 70%;
+	margin-left: 15%;
+	
+    cursor: pointer;
+	border-radius: 10px;
+	color: #000000;
+	height: 45px;
+	
+}
+.question p{
+	font-size: 80%;
+}
 
+.answer {
+    display: none;
+	background-color: #b5cd0152;
+    padding: 0 15px;
+	color: #38465A;
+	max-width: 70%;
+	margin-left: 15%;
+	text-align: justify;
+	border-radius: 10px;
+	transition: max-height 0.8s ease-out;
+	
+}
+.answer.active {
+    max-height: 200px; /* Ajusta este valor según la altura máxima esperada */
+}
 /* Footer Section*/
 #footer {
 	background: #262626;
