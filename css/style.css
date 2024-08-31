@@ -723,8 +723,6 @@ width: 800px;
 #bluedark{
 	max-height: 700px;
 	background-color: #0f1517ef;
-	
-	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -746,7 +744,6 @@ width: 800px;
 	font-size: 250%;
 	color: white;
 	max-width: 200%;
-	box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
 	text-align: center;
 }
 #bluedark p {
@@ -802,25 +799,27 @@ width: 800px;
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
-    height: 100%; /* Ajusta la altura según tus necesidades */
+    height: 50%;
+	top:-10px /* Ajusta la altura según tus necesidades */
 }
+
 .imagenfam{
 	max-width: 40%;
+	margin-left: -40px;
 }
 .container {
     display: flex;
     align-items: flex-start;
-    width: 100%;
+  
 }
 
 
 .texto {
-	padding: 4%;
+	padding: 2%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     flex: 1;
-	
 	text-align: end;
 	
 }
@@ -877,40 +876,62 @@ color: #ffffff;
 	font-size: 100%;
 	color: #000000;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 568px) {
 	.precio-box-container {
-		display: flex;
-		gap: 10px; /* Espacio de 20px entre las cajas de precio */
+		gap: 20px;
+	 /* Espacio de 20px entre las cajas de precio */
 		margin-top: 20px;
-	width: 100%;
-	height: 180px;
-
-	
+	width: 50%;
+	height: 160px;
+	margin-bottom: 10px;
 	}
+	.containerIME {
+		display: flex;
+		align-items: flex-start;
+	  max-height: 150PX;
+	  
+	}
+	.texto {
+		padding: 2%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		flex: 1;
+		font-size: 55%;
+		text-align: end;
+	}
+	.imagenfam{
+	max-width: 25%;
+    margin-left: -10px;
+}
 	.precio-original {
-		font-size: 100%;
+		font-size: 45%;
 		text-align: end;
 	color: #ffffff;
 	}
 	
 	.precio-titulo span{
-		font-size: 55%;
+		font-size: 40%;
 	}
 	  .precio-descuento span {
-		font-size: 50%;
+		font-size:35%;
 		color: #000000;
 	  }
-
+	  .precio-descuento {
+		font-size: 40%;
+		color: #ffffff;
+		text-align: end;
+	  }
 	.precio-box {
 		background-color: #B6CD01; /* Ajusta el color verde según tu preferencia */
-		padding: 20px;
-		text-align: left;
+		padding: 10px;
 		border-radius: 10px;
-		width: 95%;
-		height: 50%;
-		font-size: 150%;
+		width: 75%;
+		max-height: 30%;
+		margin-left: -10%;
 	
 	}
+	
   }
 
   /*testimonials*/
@@ -1192,20 +1213,25 @@ color: #ffffff;
 			border: 2px solid #d3db2e;/* Fondo verde para el cuadro */
 		padding: 20px; /* Espaciado interno para que los elementos no estén pegados al borde */
 		border-radius: 10px; /* Bordes redondeados */
-		text-align: center;
-		max-width: 200px;
-		max-height: 100px; /* Ancho máximo del cuadro */
+		max-width: 100px;
+		max-height: 90px; /* Ancho máximo del cuadro */
 		box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.973);
-		justify-content: space-between;
+	
+
 		margin-bottom: 30px; /* Sombra para darle un efecto de elevación */
 	  }
 	  
 	  #icon {
-		max-width: 50px;
+		max-width: 45px;
 		padding: 10px; /* Asegura que las imágenes sean responsive */
 		min-height: 10px;
 	  }
 	  
+#bluedark{
+	max-height: 380px;
+	background-color: #0f1517ef;
+}
+
 	  .raised {
 		margin-bottom: 20px; /* Ajusta este valor para elevar la segunda imagen */
 	  }
@@ -1224,26 +1250,30 @@ color: #ffffff;
 		text-align: center;
 		
 		padding: 15px;
-		font-size: 15px;
+		font-size: 10px;
 		max-width: 700px;
 	}
+	#bluedark h2{
+	
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 120%;
+		color: white;
+		max-width: 200%;
+		text-align: center;
+	}
+	#text2{
+		font-size: 200%;
+		color: rgb(249, 249, 249);
+		font-weight: bold;
+	  }
+	  
 
-	@media (max-width: 1024px) {
-		.texto {
-			padding: 30px;
-		}
+}
+
 	
-		.precio-box-container {
-			gap: 15px;
-		}
-	
-		.precio-titulo {
-			font-size: 22px;
-		}
-	
-		.precio-original, .precio-descuento {
-			font-size: 16px;
-		}
+	@media (max-width: 768px) {
+		
+		
 		.footer {
 			background-color: #0F1517;
 			color: #ffffff;
@@ -1324,19 +1354,6 @@ color: #ffffff;
 			display: block; /* Elimina los espacios en blanco debajo de la imagen si es un elemento en línea */
 			object-fit: cover; /* Ajusta la imagen para que siempre cubra todo el contenedor */
 		}
-	}
-	
-	@media (max-width: 768px) {
-		.texto {
-			padding: 15px;
-			align-items: flex-start; /* Cambia la alineación en pantallas pequeñas */
-		}
-	
-		.precio-box-container {
-			flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
-			align-items: flex-start;
-			gap: 10px;
-		}
 	
 		.imagen {
 			height: 200px; /* Reduce la altura de la imagen */
@@ -1346,67 +1363,13 @@ color: #ffffff;
 			font-size: 10px;
 		}
 	
-		.precio-original, .precio-descuento {
-			font-size: 14px;
-		}
-		.prevent h1 {
-			color: #38465A;
-			font-size: 10px;
-			margin-bottom: 10px;
-		}
 		
-		.prevent h2 {
-			font-size: 18px;
-			color:#38465A;
-			
-		}
-		.line {
-			height: 5px;
-			left: 100px;
-			background: linear-gradient(to right, #d3db2e, #0099006e); /* Degradado de verde claro a verde oscuro */
-		}
-		.prevent button {
-			background-color:#d3db2e;
-			color: white;
-			padding: 1px 20px;
-			border-radius: 5px;
-			border: none;
-			font-weight: 700;
-			height: 40px;
-			cursor: pointer;
-			font-size: 13px;
-		}
+	
 		
-		.prevent p {
-			font-size: 20px;
-			margin-top: 20px;
-		}
-		.prevent img{
-			width: 80px;
-		}
 		
 	}
 	
-	@media (max-width: 480px) {
-		.texto {
-			padding: 15px;
-			text-align: left; /* Alinea el texto a la izquierda en pantallas muy pequeñas */
-		}
 	
-		.precio-box {
-			padding: 15px;
-		}
-	
-		.precio-titulo {
-			font-size: 18px;
-		}
-	
-		.precio-original, .precio-descuento {
-			font-size: 12px;
-		}
-	}
-	
-	}
 @media screen and (min-width: 768px){
 
 	.slider-container {
