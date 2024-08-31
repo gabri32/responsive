@@ -183,12 +183,13 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     display: table;
     width: 100%;
     padding: 0;
+	
     background-color: #e5e5e5;
     background-image: url(../assets/images/image_front_page.png); /* Ruta de la imagen */
     background-size: cover; /* Hace que la imagen cubra todo el contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen en el contenedor */
-
+	background-size: 220vh 100vh;
 
 	 /* Opcional: Ajusta la altura al 100% del viewport */
 }
@@ -197,40 +198,20 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	text-align: end;
 
 margin-left: 60%;
-margin-top: -44%;
+margin-top: -54%;
 margin-bottom: -15%;
 
 }
 
 
-@media (max-width: 992px) {
-    #frontfamily {
-        width: 50%;
-        margin-left: 52%;
-       
-        margin-top: -55%;
-        
-    }
-}
 
-@media (max-width: 768px) {
-    #frontfamily {
-        width: 40%;
-        margin-top: -37%;
-		margin-left: 72%;
-    }
-}
+	
 
-@media (max-width: 576px) {
-    #frontfamily {
-        width: 30%;
-        margin-top: -50%;
-     margin-bottom: -49%;
- 
-    }
 
-}
+
+
 .intro .overlay {
+	height: 100vh;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
 
@@ -242,7 +223,7 @@ margin-bottom: -15%;
 	font-size: em;
 	font-weight: 700;
 	margin-top: 0;
-	font-size: 10%;
+	font-size: 170%;
 	margin-bottom: 10%;
 }
 
@@ -256,8 +237,8 @@ margin-bottom: -15%;
 	max-width: 50%;
 }
 header .intro-text {
-	padding-top: 25%;
-	padding-bottom: 5%;
+	margin-top:10%;
+
 	text-align: left;
 	padding-left: 40px;
 	line-height: 0.8;
@@ -307,43 +288,7 @@ header .intro-text img{
 .intro .overlay {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
-	
-	.intro h1 {
-		font-family: 'arial', cursive;
-		color: #b5cd02;
-		font-size: 100%;
-		font-weight: 750;
-		margin-top: 0;
-		margin-bottom: 10px;
-	}
-	.intro span {
-		color: #a7c44c;
-		font-weight: 600;
-	
-	}
-	.intro p {
-		color: #ffffff;
-		font-size: 10px;
-		font-weight: 300;
-		max-width: 200px;
-		line-height: 0.8;
-		margin-top: 10px;
-		
-	}
-	header .intro-text {
-		margin-top: 150px;
-		padding-top: 280px;
-		padding-bottom: 50px;
-		text-align: left;
-		padding-left: 20px;
-		line-height: 0.8;
-		
-		
-	}
-	header .intro-text img{
-		max-width: 50%;
-	
-	}
+
 }
 /* About Section */
 #about {
