@@ -188,7 +188,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     background-size: cover; /* Hace que la imagen cubra todo el contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen en el contenedor */
-   
+
 
 	 /* Opcional: Ajusta la altura al 100% del viewport */
 }
@@ -223,11 +223,12 @@ margin-bottom: -15%;
 
 @media (max-width: 576px) {
     #frontfamily {
-        width: 50%;
-        margin-top: -45%;
-     
+        width: 30%;
+        margin-top: -50%;
+     margin-bottom: -49%;
  
     }
+
 }
 .intro .overlay {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
@@ -241,26 +242,22 @@ margin-bottom: -15%;
 	font-size: em;
 	font-weight: 700;
 	margin-top: 0;
-	font-size: 150%;
-	margin-bottom: 10px;
+	font-size: 10%;
+	margin-bottom: 10%;
 }
-.intro span {
-	color: #a7c44c;
-	font-weight: 600;
 
-}
 .intro p {
 	color: #fff;
 	font-size: 180%;
 	font-weight: 300;
 	line-height: 0.8;
 	margin-top: 10px;
-	margin-bottom: 40px;
+	margin-bottom: 4%;
 	max-width: 50%;
 }
 header .intro-text {
-	padding-top: 250px;
-	padding-bottom: 50px;
+	padding-top: 25%;
+	padding-bottom: 5%;
 	text-align: left;
 	padding-left: 40px;
 	line-height: 0.8;
@@ -314,7 +311,7 @@ header .intro-text img{
 	.intro h1 {
 		font-family: 'arial', cursive;
 		color: #b5cd02;
-		font-size: 20px;
+		font-size: 100%;
 		font-weight: 750;
 		margin-top: 0;
 		margin-bottom: 10px;
