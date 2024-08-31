@@ -277,9 +277,10 @@ header .intro-text img{
 	
 	
 	
-.intro .overlay {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
-}
+	.intro .overlay {
+		height: 69vh;
+		background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+	}
 
 }
 /* About Section */
