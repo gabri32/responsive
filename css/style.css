@@ -207,8 +207,6 @@ margin-bottom: -15%;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
 
-
-
 .intro h1 {
 	font-family: 'arial', cursive;
 	color: #b5cd02;
@@ -328,6 +326,7 @@ margin-bottom: 40%;
     width:100%;
     font-size: 150%;
 	margin-left: 21%;
+	margin-bottom: 3%;
 }
 
 .about-text h3 {
@@ -377,7 +376,7 @@ margin-bottom: 40%;
 }
 .image-and-text p {
     max-width: 100%;
-    font-size: 120%;
+    font-size: 160%;
 	line-height: normal;
 }
 /* Responsive adjustments using relative units */
@@ -551,7 +550,7 @@ font-size: 15px;
 
 /*prevent*/
 .prevent {
- 
+ text-align: center;
     padding: 50px;
     border-radius: 10px;
 }
@@ -819,11 +818,13 @@ margin-left: 16%;  }
     justify-content: space-between;
     position: relative;
     height: 50%;
-	top:-10px /* Ajusta la altura según tus necesidades */
+	 /* Ajusta la altura según tus necesidades */
 }
 
 .imagenfam{
-	margin-left: -62%;;
+	margin-left: -2%;
+width: 100%;
+margin-top: -10%;
 }
 .container {
     display: flex;
@@ -836,20 +837,22 @@ margin-left: 16%;  }
     flex-direction: column;
     align-items: flex-end;
     flex: 1;
+	width: 80%;
+	height: 90%;
 	text-align: end;
 	
-	margin-left:500px;
-	margin-top:-27% ;
+	
+
 }
 .texto h2{
-	font-size: 150%;
+	font-size: 140%;
 }
 .precio-box-container {
     display: flex;
     gap: 10px; /* Espacio de 20px entre las cajas de precio */
-    margin-top: 20px;
+   height: 80%;
     width: 100%;
-
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -858,11 +861,15 @@ margin-left: 16%;  }
     padding: 20px;
     text-align: left;
 	border-radius: 10px;
-    width: 50%;
+    width: 90%;
 	font-size: 150%;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 
 }
+.precio-box img {
 
+width: 10%;
+}
 	
 
 .precio-titulo {
@@ -871,10 +878,7 @@ margin-left: 16%;  }
 	color: #38465A;
 	
 }
-.precio-titulo img {
-    width: 10%;
-	
-}
+
 .precio-titulo span {
    font-size: 80%;
  
@@ -894,44 +898,7 @@ color: #ffffff;
 	font-size: 100%;
 	color: #000000;
   }
-  @media screen and (max-width: 568px) {
-	
-		
-.texto {
-	padding: 2%;
-    display: flex;
-    flex-direction: column;
-width: 100px;
-    flex: 1;
-	margin-left:-5%;
-	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-}
-	.imagenfam{
-	max-width: 25%;
-    margin-left: -10px;
-	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-}
-	.precio-original {
-		font-size: 50%;
-		text-align: end;
-	color: #ffffff;
-	}
-	
-	.precio-titulo span{
-		font-size: 40%;
-	}
-	  .precio-descuento span {
-		font-size:35%;
-		color: #000000;
-	  }
-	  .precio-descuento {
-		font-size: 40%;
-		color: #ffffff;
-		text-align: end;
-	  }
-	
-	
-  }
+
 
   /*testimonials*/
 
@@ -1047,8 +1014,19 @@ width: 100px;
     }
 
     .tarjeta {
-        width: 90%;
+        width: 80%;
     }
+	.precio-box {
+		background-color: #B6CD01; /* Ajusta el color verde según tu preferencia */
+		padding: 20px;
+		text-align: left;
+		border-radius: 10px;
+		width: 90%;
+		font-size: 90%;
+		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+	
+	}
+
 }
 /* list */
 .faq {
@@ -1091,12 +1069,19 @@ width: 100px;
 .answer.active {
     max-height: 200px; /* Ajusta este valor según la altura máxima esperada */
 }
+
+.contact_asesor {
+text-align: center;
+}
+.logoend{
+	text-align: center;
+	margin-bottom: -10%;
+}
 /* Footer Section*/
 .footer {
 	background-color: #0F1517;
 	color: #ffffff;
 	padding: 4% 2%;
-	max-height: 300px;
   }
   
   .footer-container {
@@ -1108,7 +1093,8 @@ width: 100px;
   }
   
   .footer-logo img {
-	width: 60%;
+	width: 70%;
+	min-width: 30%;
 	padding-left: 1%;
   }
   
@@ -1116,7 +1102,7 @@ width: 100px;
 	display: flex;
 	flex-direction: column;
 	text-align: justify;
-	margin-right: 20%;
+	margin-right: 10%;
   }
   
   .footer-column h3 {
@@ -1127,13 +1113,13 @@ width: 100px;
   
   .footer-column ul {
 	list-style: none;
-	padding: 0;
+	padding: 1;
   }
   
   .footer-column ul li {
 	margin-bottom: 1%;
 	font-size: 100%;
-	letter-spacing: -1.1px;
+	letter-spacing: 10%;
   }
   
   .footer-column ul li a {
@@ -1265,103 +1251,7 @@ width: 100px;
 }
 
 	
-	@media (max-width: 768px) {
-		
-		
-		.footer {
-			background-color: #0F1517;
-			color: #ffffff;
-			padding: 4% 2%;
-			max-height: 300px;
-		  }
-		  
-		  .footer-container {
-			display: flex;
-			justify-content: space-between;
-			align-items: flex-start;
-			max-width: 100%;
-			margin: 0 auto;
-		  }
-		  
-		  .footer-logo img {
-			width: 60%;
-			padding-left: 1%;
-		  }
-		  
-		  .footer-column {
-			display: flex;
-			flex-direction: column;
-			text-align: justify;
-			margin-right: 20%;
-		  }
-		  
-		  .footer-column h3 {
-			font-weight: bold;
-			margin-bottom: 1.5%;
-			font-size: 80%;
-		  }
-		  
-		  .footer-column ul {
-			list-style: none;
-			padding: 0;
-		  }
-		  
-		  .footer-column ul li {
-			margin-bottom: 1%;
-			font-size: 50%;
-		  }
-		  
-		  .footer-column ul li a {
-			color: #ffffff;
-			text-decoration: none;
-			transition: color 0.3s ease;
-		  }
-		  
-		  .footer-column ul li a:hover {
-			color: #6e9b14;
-		  }
-		  
-		  .footer-socials {
-			margin-top: 20;
-		
-		  }
-		  
-		  .footer-socials a {
-			display: inline-block;
-			margin-right: 1.5%;
-			width: 15%;
-		  }
-		  
-		  .footer-socials img {
-			width: 100%;
-			height: auto;
-		  }
-		  
-		  .paisaje {
-			width: 100%;
-			overflow: hidden; /* Asegura que no haya desbordamiento si la imagen es más grande */
-		}
-		
-		.paisaje img {
-			width: 100%;
-			height: auto; /* Mantiene la proporción de la imagen */
-			display: block; /* Elimina los espacios en blanco debajo de la imagen si es un elemento en línea */
-			object-fit: cover; /* Ajusta la imagen para que siempre cubra todo el contenedor */
-		}
 	
-		.imagen {
-			height: 200px; /* Reduce la altura de la imagen */
-		}
-	
-		.precio-titulo {
-			font-size: 10px;
-		}
-	
-		
-	
-		
-		
-	}
 	
 	
 @media screen and (min-width: 768px){
