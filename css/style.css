@@ -628,13 +628,14 @@ font-size: 15px;
 
 
 /* CARDS */
+.container{
 
+	
+}
 .pricing-container {
 width: 80%;
 	margin: 20px auto;
-	border-radius: 80%;
 	text-align: start;
-
 	
   }
   
@@ -653,10 +654,8 @@ width: 80%;
 	display: flex;
 	justify-content: space-between;
 	gap: 20px;
-	padding: 20px;
-	height: 100%;
-
-  
+	padding: 10px;
+  width: 100%;
   }
   .price {
 	text-align: center;
@@ -664,7 +663,7 @@ width: 80%;
 	font-weight: bold;
 	color: #7CC20A;
 	width: 100%;
-
+	line-height: 0px;
   }
 
   .card {
@@ -673,8 +672,6 @@ width: 80%;
 	border: 2px solid #B7CD02;
 	border-radius: 8px;
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-	width: 25%;
-	height: 90%;
 	letter-spacing: -1px;
 	background-color: #fff;
 	transition: all 400ms ease;
@@ -682,8 +679,10 @@ width: 80%;
   }
   .star {
 	display: block;
-	margin: 0 auto;
+	margin:  auto;
 	max-height: 8%;
+	margin-top: -10%;
+	margin-bottom:5%;
   }
   .card:hover{
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
@@ -691,18 +690,18 @@ width: 80%;
   }
   .card h3 {
 	font-weight: lighter;
-	font-size: 90%;
+	font-size: 150%;
 	color: #333;
 	text-align: center;
-	
+	margin-top: 0px;
 	font-weight: 900;
+	line-height: 0px;
   }
   
   
   .card p {
-	font-size: 90%;
+	font-size: 110%;
 	color: #333;
-	
 	width: 90%;
 	margin-left: 15%;
 	text-align: start;
@@ -717,9 +716,8 @@ margin-left: 16%;  }
   
   .profitability {
 	font-size: 10;
-	margin-top: 20px;
+	margin-top: -30px;
 	color: #333;
-  margin-top: -5%;
 	width: 100%;
 	text-align: center;
   }
