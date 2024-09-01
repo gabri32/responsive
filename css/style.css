@@ -212,7 +212,7 @@ margin-bottom: -15%;
 .intro h1 {
 	font-family: 'arial', cursive;
 	color: #b5cd02;
-	font-size: em;
+
 	font-weight: 700;
 	margin-top: 0;
 	font-size: 170%;
@@ -276,49 +276,80 @@ header .intro-text img{
 @media screen and (max-width: 968px) {
 	
 	
+	.intro {
+		display: table;
+		width: 100%;
+		padding: 0;
+		font-size: 50%;
+		background-color: #e5e5e5;
+		background-image: url(../assets/images/image_front_page.png); /* Ruta de la imagen */
+		background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+		background-repeat: no-repeat; /* Evita que la imagen se repita */
+		background-position: center; /* Centra la imagen en el contenedor */
+		background-size: 250%
 	
+		 /* Opcional: Ajusta la altura al 100% del viewport */
+	}
 
 
 }
 /* About Section */
 #about {
-    padding: 120px 0;
+    padding: 15% ;
 	
 }
-
-.about-img {
-   /* Align image to the left */
-  max-width: 300px;
-  margin-left:  -15px;/* Adjust the maximum width as needed */
+.containerabout {
  
 
+  
+}
+.containerabout img {
+ 
+
+  
+}
+.about-img img {
+ 
+	width: 50%;
+  margin-left:  -22%;/* Adjust the maximum width as needed */
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.477);
+margin-bottom: 40%;
 }
 
 .about-text {
-    margin-left: 10%; 
-	align-items: end;
-	line-height: 15px;/* Adjust the left margin to compensate for the image */
+   
+   margin-top: -92%;
+	width: 100%;
+	margin-bottom: 9%;
+	/* Adjust the left margin to compensate for the image */
 }
 .about-text h2 {
     font-family: 'fat';
-	line-height: 5px;/* Reduce la línea de separación */
-    font-size: 120%;
+    width:100%;
+    font-size: 150%;
+	margin-left: 21%;
 }
 
 .about-text h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #B7CD02;
-    font-size: 120%;
+	font-size: 175%;
+	margin-top: -6%;
+	width: 100%;
+	text-align: end;
+   
   /* Reduce la línea de separación */
 }
 
 .about-text h4 {
     font-family: 'fat';
-    font-size: 50%;
+    font-size: 100%;
     text-align: end;
-    max-width: 80%;
-    line-height: 50%; /* Reduce la línea de separación */
+    max-width: 100%;
+    line-height: 50%; 
+	 margin-top: -1%;/* Reduce la línea de separación */
+	 font-weight: bolder;
 }
 
 .about-text h5 {
@@ -327,90 +358,30 @@ header .intro-text img{
     line-height: 1.2; /* Reduce la línea de separación */
     color: #B7CD02;
     text-align: end;
-    width: 80%;
-    margin-left: -12%;
+    width: 100%;
+	font-weight: 100;
+	margin-top: -1%
 }
 .image-and-text {
     display: flex;
     align-items: center;
-    gap: 2rem; /* Adjust the gap between the image and text */
-
+	text-align: justify;
+	margin-left: 40%;
+    gap: 1rem; /* Adjust the gap between the image and text */
+	width: 60%;
+	margin-bottom: 30%;
 }
-
-.image-and-text img {
-    max-width: 25%;
-
+.image-and-text img{
+  width: 40px; /* Adjust the gap between the image and text */
+  margin-top: -40px;
 }
-
-.about-text p {
-    max-width: 60%;
-    font-size: 50%;
-}
-
-@media screen and (max-width: 768px) {
-	.about-text {
-		margin-left: -120px;
-		align-items: center;
-		line-height: 15px;/* Adjust the left margin to compensate for the image */
-	}
-	.about-text h2 {
-		font-family: 'fat';
-		line-height: 5px;/* Reduce la línea de separación */
-		font-size: 120%;
-	}
-	
-	.about-text h3 {
-		font-family: Arial, Helvetica, sans-serif;
-		font-weight: bold;
-		color: #B7CD02;
-		font-size: 120%;
-	  /* Reduce la línea de separación */
-	}
-	
-	.about-text h4 {
-		font-family: 'fat';
-		font-size: 50%;
-		text-align: end;
-		max-width: 80%;
-		line-height: 50%; /* Reduce la línea de separación */
-	}
-	
-	.about-text h5 {
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 40%;
-		line-height: 1.2; /* Reduce la línea de separación */
-		color: #B7CD02;
-		text-align: end;
-		width: 80%;
-		margin-left: -12%;
-	}
-	.image-and-text img {
-		max-width: 8%;
-		margin-top: -60px;
-       	margin-left: 130px;
-		
-	}
-	
-	.about-text p {
-		max-width: 60%;
-		font-size: 50%;
-		margin-left:-20px; ;
-		margin-top: 40px;
-	}	
-	.about-img {
-		float: left; /* Align image to the left */
-	  max-width: 200px;
-	  margin-left:  -15px;
-	  margin-top: 130px;
-	  /* Adjust the maximum width as needed */
-	 
-	
-	}
+.image-and-text p {
+    max-width: 100%;
+    font-size: 120%;
+	line-height: normal;
 }
 /* Responsive adjustments using relative units */
-.about-img img {
-    max-width: 100%; /* the image scales responsively */
-}
+
 
 .about-text {
     font-size: clamp(2rem, 5vw, 4rem); /* Adjust font size based on viewport width */
@@ -474,7 +445,73 @@ header .intro-text img{
     width: 50px;
     height: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 568px) {
+	.about-img img {
+ 
+		width: 50%;
+	  margin-left:  -22%;/* Adjust the maximum width as needed */
+	margin-bottom: 45%;
+	}
+	.about-text {
+   
+		margin-top: -122%;
+		 width: 100%;
+		 margin-bottom: 9%;
+		 /* Adjust the left margin to compensate for the image */
+	 }
+	 .about-text h2 {
+		 font-family: 'fat';
+		 width:100%;
+		 font-size: 150%;
+		 margin-left: 21%;
+	 }
+	 
+	 .about-text h3 {
+		 font-family: Arial, Helvetica, sans-serif;
+		 font-weight: bold;
+		 color: #B7CD02;
+		 font-size: 105%;
+		 margin-top: -6%;
+		 width: 100%;
+		 text-align: end;
+		
+	   /* Reduce la línea de separación */
+	 }
+	 
+	 .about-text h4 {
+		 font-family: 'fat';
+		 font-size: 100%;
+		 text-align: end;
+		 max-width: 100%;
+		 line-height: 50%; 
+		  margin-top: -1%;/* Reduce la línea de separación */
+		  font-weight: bolder;
+	 }
+	 
+	 .about-text h5 {
+		 font-family: Arial, Helvetica, sans-serif;
+		 font-size: 40%;
+		 line-height: 1.2; /* Reduce la línea de separación */
+		 color: #B7CD02;
+		 text-align: end;
+		 width: 100%;
+		 font-weight: 100;
+		 margin-top: -1%
+	 }
+	 .image-and-text {
+		 display: flex;
+		 align-items: center;
+		 text-align: justify;
+		 margin-left: 40%;
+		 gap: 1rem; /* Adjust the gap between the image and text */
+		 width: 70%;
+		 margin-bottom: 30%;
+	 }
+	 .image-and-text p {
+		max-width: 100%;
+		font-size: 70%;
+		line-height: normal;
+	}	 
 	.first {
 		width: 50%;
 		background-color: #B7CD02;
@@ -506,6 +543,10 @@ font-size: 15px;
     color: #000000;
 	margin-bottom: 20px;
 }
+.image-and-text img{
+	width: 20px; /* Adjust the gap between the image and text */
+  
+  }
 }
 
 /*prevent*/
@@ -906,7 +947,7 @@ width: 100px;
 }
 .subheading {
 	font-family: 'Arial', sans-serif;
-	font-size: 25px;
+	font-size: 15px;
 	color: #5D6167;
 	width: 80%;
 	padding-left: 20%;
@@ -930,6 +971,7 @@ width: 100px;
     color: #ffffff;
     font-weight: bold;
     width: 250px;
+	max-height: 330px;
 	transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
@@ -940,21 +982,19 @@ width: 100px;
 .tarjeta img {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
 	transition: transform 0.5s ease;
 }
 
+
 .tarjeta h3 {
     font-size: 1.5em;
-
 	color: #000000;
 }
 
 .tarjeta p {
-    font-size: 1.8em;
-    margin-bottom: 15%;
+    font-size: 90%;
+ 
 	color: #B6CD01;
 }
 .tarjeta:hover img {
@@ -976,7 +1016,7 @@ width: 100px;
    
     padding: 15px;
     border-radius: 10px;
-    font-size: 1.2em;
+    font-size: 90%;
 }
 
 .card-overlay {
