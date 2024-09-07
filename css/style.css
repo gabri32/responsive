@@ -176,22 +176,27 @@ margin-left: 10%;
   }
   
   /* Aplicando las animaciones a los elementos */
-  header .intro-text img {
+  header .textostitulos img {
 	width: 30%;
 	opacity: 0;
 	animation: fadeInUp 1s ease-in-out forwards;
   }
   
-  header .intro-text h1 {
+  header .textostitulos h1 {
 	opacity: 0;
 	animation: fadeInUp 1s ease-in-out forwards;
 	animation-delay: 0.5s; /* Aparece después de la imagen */
   }
   
-  header .intro-text p {
+  header .textostitulos p {
 	opacity: 0;
 	animation: fadeInUp 1s ease-in-out forwards;
 	animation-delay: 1s; /* Aparece después del título */
+  }
+  header .imagenes img {
+	opacity: 0;
+	animation: fadeInUp 1s ease-in-out forwards;
+	animation-delay: 1.2s; /* Aparece después del título */
   }
   
 
@@ -261,12 +266,81 @@ margin-left: 10%;
 	}
 	.imagenes img{
 		height: 60%;
-		margin-top: 11.3%;
+		margin-top: 23%;
 		margin-left: 10%;
 		
 	}
+}
+@media screen and (max-width: 768px) {
+	
+	.intro {
+		display: table;
+		width: 100%;
+		padding: 0;
+		
+		background-color: #e5e5e5;
+		background-image: url(../assets/images/image_front_page.png); /* Ruta de la imagen */
+		background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+		background-repeat: no-repeat; /* Evita que la imagen se repita */
+		background-position: center; /* Centra la imagen en el contenedor */
+		height: 100vh;
+	
+		 /* Opcional: Ajusta la altura al 100% del viewport */
+	}
+	.container1{
+		display: grid;
+	}
+	.intro .overlay {
 
+		background: linear-gradient(to bottom, rgba(197, 186, 139, 0.76), rgba(223, 215, 169, 0.432), rgba(0, 0, 0, 0));
+        margin-top: -120px;
 
+	}
+	
+	.intro h1 {
+		font-family: 'arial', cursive;
+		color:  #B7CD02;;
+	
+		font-weight: 700;
+		margin-top: 0;
+		font-size: 20px;
+	
+	}
+	
+	.intro p {
+		color: #000000;
+		font-size: 130%;
+		font-weight: 900;
+		line-height: 0.8;
+	
+	
+	}
+	
+	.textostitulos{
+		
+		width: 75%;
+		height: 80%;
+	
+		
+		
+	}
+	.textostitulos img {
+	
+	height: 30%;
+		
+	}
+	.imagenes{
+	
+	
+		width: 100%;
+		
+	}
+	.imagenes img{
+		height: 30%;
+		margin-top: -6.01%;
+		margin-left: 50%;
+		
+	}
 }
 /* About Section */
 #about {
