@@ -700,7 +700,7 @@ width: 100%;
 #portfolio {
 	padding: 0 0 120px 0;
 	margin-top: 10%;
-
+height: 50vh;
 }
 
 /* Contenedor del carrusel */
@@ -859,6 +859,40 @@ margin-left: 16%;  }
 	background-color: #B7CD02;
 	margin: 0 3px;
 	display: inline-block;
+  }
+  @media screen and (max-width: 968px) {
+	.pricing-container {
+		width: 100%;
+			margin: 20px auto;
+			text-align: start;
+			
+		  }
+	.pricing-card {
+		display: grid;
+		justify-content: space-between;
+		gap: 20px;
+		padding: 10px;
+	  width: 100%;
+
+	  }
+	  .star {
+		display: block;
+		margin:  auto;
+		max-height: 8%;
+		margin-top: 0%;
+		margin-bottom:5%;
+	  }
+	  .card {
+		flex: 1;
+		width: 140%;
+		border: 2px solid #B7CD02;
+		border-radius: 8px;
+		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+		letter-spacing: -1px;
+		background-color: #fff;
+		transition: all 400ms ease;
+	  
+	  }
   }
 
   /*inversion*/
@@ -1285,83 +1319,10 @@ text-align: center;
     object-fit: cover; /* Ajusta la imagen para que siempre cubra todo el contenedor */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
 	
 
-	.cards-container {
-		flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
-		align-items: center; /* Opcional: centrar las tarjetas */
-	  }
-	  
 	
-	  
-	  #input {
-		display: flex;
-		justify-content: center;
-		align-items: flex-end; /* Alinea las imágenes en la parte inferior por defecto */
-		gap: 10px;
-		margin-bottom: 50px;
-		/* Espacio entre los elementos */
-	  }
-	  
-	  #box {
-		background-color: transparent;
-			border: 2px solid #d3db2e;/* Fondo verde para el cuadro */
-		padding: 20px; /* Espaciado interno para que los elementos no estén pegados al borde */
-		border-radius: 10px; /* Bordes redondeados */
-		max-width: 100px;
-		max-height: 90px; /* Ancho máximo del cuadro */
-		box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.973);
-	
-
-		margin-bottom: 30px; /* Sombra para darle un efecto de elevación */
-	  }
-	  
-	  #icon {
-		max-width: 45px;
-		padding: 10px; /* Asegura que las imágenes sean responsive */
-		min-height: 10px;
-	  }
-	  
-#bluedark{
-	max-height: 380px;
-	background-color: #0f1517ef;
-}
-
-	  .raised {
-		margin-bottom: 20px; /* Ajusta este valor para elevar la segunda imagen */
-	  }
-	  
-	  
-	  #text1 {
-		font-size: 15px;
-		color:white ; /* Ajusta el tamaño de la fuente según tus necesidades */
-	  }
-	  #finaltitle p {
-		color: #ffffff;
-		font-size: 15px;
-	}
-	#bluedark p{
-		color: white;
-		text-align: center;
-		
-		padding: 15px;
-		font-size: 10px;
-		max-width: 700px;
-	}
-	#bluedark h2{
-	
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 120%;
-		color: white;
-		max-width: 200%;
-		text-align: center;
-	}
-	#text2{
-		font-size: 200%;
-		color: rgb(249, 249, 249);
-		font-weight: bold;
-	  }
 	  
 
 }
@@ -1370,30 +1331,3 @@ text-align: center;
 	
 	
 	
-@media screen and (min-width: 768px){
-
-	.slider-container {
-		position: relative;
-		width: 700px; /* Tamaño máximo de la imagen */
-		height: 500px; /* Tamaño máximo de la imagen */
-		overflow: hidden;
-		margin: auto;
-	  }
-	  
-	  /* Las diapositivas (slides) */
-	  .slide {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		opacity: 0;
-		transition: opacity 1s ease-in-out;
-	  }
-	  
-	  /* Las imágenes dentro de las diapositivas */
-	  .pos {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	  }
-
-}
