@@ -3,25 +3,22 @@ const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
 
 function showSlide(i) {
-  slides.forEach((slide, idx) => {
-    slide.classList.remove('active');
-    if (idx === i) {
-      slide.classList.add('active');
-    }
-  });
+  // Movemos el contenedor de las imágenes (slider-container) para que se desplace.
+  document.querySelector('.slider-container').style.transform = `translateX(-${i * 100}%)`;
 }
 
 function nextSlide() {
-  index = (index + 1) % totalSlides;
-  showSlide(index);
+  index = (index + 1) % totalSlides; // Incrementa el índice y lo resetea cuando llega al final.
+  showSlide(index); // Muestra la nueva slide.
 }
 
 function startCarousel() {
-  showSlide(index);
-  setInterval(nextSlide, 3000); // Cambia la imagen cada 3 segundos
+  showSlide(index); // Inicializa mostrando la primera slide.
+  setInterval(nextSlide, 3000); // Cambia de slide cada 3 segundos.
 }
 
 document.addEventListener('DOMContentLoaded', startCarousel);
+
 
 const questions = document.querySelectorAll('.question');
 
