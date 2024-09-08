@@ -339,7 +339,7 @@ height: 50vh;
 }
 
 .imagenes img {
-	width: 90%;
+	max-width: 90%;
 	height: 100%;
 	
   }
@@ -365,12 +365,12 @@ height: 50vh;
 	width: 50%;
   margin-left:  -22%;/* Adjust the maximum width as needed */
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.477);
-margin-bottom: 40%;
+  margin-top: -60%;
 }
 
 .about-text {
    
-   margin-top: -94%;
+  
 	width: 100%;
 	margin-bottom: 9%;
 	/* Adjust the left margin to compensate for the image */
@@ -503,8 +503,7 @@ margin-bottom: 40%;
 @media screen and (max-width: 968px) {
 
 	#about {
-		padding: 5% ;
-		
+		padding: 4% ;
 		height: 100vh;
 	}
 	.containerabout {
@@ -517,11 +516,11 @@ margin-bottom: 40%;
 		width: 100%;
 		align-items: center;
 		margin-top: 0px;
-		margin-bottom: 0px;
-		margin-top: -130%;
-		margin-bottom: 0px;
+		margin-bottom: -30%;
 		margin-left: 0px;
 		margin-right: 0px;
+		height: 15vh;
+		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 	}
 	.about-text h2 {
 		font-family: 'fat';
@@ -536,10 +535,10 @@ margin-bottom: 40%;
 		font-family: Arial, Helvetica, sans-serif;
 		font-weight: bold;
 		color: #B7CD02;
-		font-size: 185%;
+		font-size: 145%;
 		margin-top: -6%;
 		width: 100%;
-		text-align: end;
+		text-align: start;
 	   
 	  /* Reduce la línea de separación */
 	}
@@ -561,7 +560,7 @@ margin-bottom: 40%;
 		color: #B7CD02;
 		text-align: end;
 		width: 100%;
-		font-weight: 100;
+		font-weight: 700;
 		margin-top: -1%
 	}
 	.image-and-text {
@@ -570,38 +569,42 @@ margin-bottom: 40%;
 		gap: 1rem; /* Adjust the gap between the image and text */
 		width: 100%;
 		height: 20vh;
-		margin-top: -148%;
-	
 		margin-left: 0px;
 		margin-bottom: 0px;
+		max-height: 27vh;
+		margin-top: 0%;
+		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 	}
 	.image-and-text img{
-		width: 50px; /* Adjust the gap between the image and text */
-       margin-bottom: -100%;
+		max-width: 15%; /* Adjust the gap between the image and text */
+       margin-bottom:0%;
 	  }
 	  .image-and-text p {
 		  max-width: 100%;
-		  font-size: 18px;
+		  font-size: 100%;
 		  margin-top: 0px;
 		  line-height: normal;
 		  color: #5D6167;
+		  margin-top: -8%;
 	  }
 	.about-img img {
  
 		width: 100%;
-		height: 300px;
+		height: 100%;
 	  margin-left:  0%;/* Adjust the maximum width as needed */
 	margin-top: 0px;
 	margin-bottom:0px ;
 	
 	}
 	.about-img {
-		box-shadow: 0 1px 10px rgba(0, 0, 0, 1.2);
-		height: 32vh;	
+		max-width: 100%;
+		height: 33vh;	
 		display: flex; /* Activa Flexbox */
 		justify-content: center; /* Centra horizontalmente el contenido */
 		align-items: flex-end;
-		transform: translateY(120%);
+		padding: 0px;
+		box-shadow: 0 1px 10px rgba(0, 0, 0, 1.2);
+		margin-top: -35%;
 	}
 }
 
