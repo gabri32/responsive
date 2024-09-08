@@ -282,7 +282,7 @@ margin-left: 10%;
 	animation-delay: 1.5s;
   }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width:568px) {
 	
 	
 	.intro {
@@ -334,10 +334,11 @@ margin-left: 10%;
 	width: 70%;
 	height: 44vh;
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 1);
-	margin-top: 9%;
+	margin-top: 8%;
 }
 .imagenes img {
 	width: 100%;
+	height: 100%;
 	
   }
 
