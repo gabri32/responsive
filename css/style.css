@@ -246,6 +246,14 @@ height: 100vh;
 	margin-top: 10.1%;
 margin-left: 10%;
 }
+.lineacolor {
+	margin-top: -1%;
+    background: linear-gradient(to right, #B6CD01, rgb(245, 235, 202), #FFFFFF);
+    height: 5px; /* Ejemplo de altura */
+    width: 100%; /* Ejemplo de ancho, puedes ajustarlo */
+}
+
+
 /* Definición de las animaciones */
 @keyframes fadeInUp {
 	from {
