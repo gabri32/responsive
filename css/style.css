@@ -316,8 +316,19 @@ margin-left: 10%;
 
 }
 .textostitulos{
-	margin-top: 20%;
+	margin-top: 0%;
 	width: 80%;
+
+height: 50vh;
+}
+.imagenes{
+	margin-left:0%;
+	width: 100%;
+	height: 50vh;
+
+	margin-top: 15%;
+	align-items: center;
+	margin-top: 0%;
 }
 .textostitulos img{
 	
@@ -329,14 +340,7 @@ margin-left: 10%;
 	line-height: 0.8;
 
 }
-.imagenes{
-	margin-left:0%;
-	width: 100%;
-	height: 44vh;
 
-	margin-top: 15%;
-	align-items: center;
-}
 .imagenes img {
 	width: 90%;
 	height: 100%;
