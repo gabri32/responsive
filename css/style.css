@@ -186,7 +186,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     display: table;
     width: 100%;
     padding: 0;
-	
     background-color: #e5e5e5;
     background-image: url(../assets/images/image_front_page.png); /* Ruta de la imagen */
     background-size: cover; /* Hace que la imagen cubra todo el contenedor */
