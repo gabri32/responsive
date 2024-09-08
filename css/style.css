@@ -129,10 +129,10 @@ margin-left: 10%;
 		background-image: url(../assets/images/image_front_page.png); /* Ruta de la imagen */
 		background-size: cover; /* Hace que la imagen cubra todo el contenedor */
 		background-repeat: no-repeat; /* Evita que la imagen se repita */
-		background-position: center; /* Centra la imagen en el contenedor */
+	
 		height: 50vh;
 	
-		 /* Opcional: Ajusta la altura al 100% del viewport */
+		
 	}
 	.container1{
 		display: grid;
@@ -140,7 +140,7 @@ margin-left: 10%;
 	.intro .overlay {
 
 		background: linear-gradient(to bottom, rgba(197, 186, 139, 0.76), rgba(223, 215, 169, 0.432), rgba(0, 0, 0, 0));
-       
+       height: 100%;
 
 	}
 	
@@ -178,7 +178,7 @@ margin-left: 10%;
 	}
 	.imagenes img{
 		position: relative;
-		height: 51vh;
+		height: 53vh;
 		
 		
 	}
