@@ -833,17 +833,21 @@ margin-left: 16%;  }
   }
   @media screen and (max-width: 668px) {
 	.pricing-container {
+		display: flex;
+		justify-content: center; /* Centra horizontalmente */
+		align-items: center;     /* Centra verticalmente */
+		flex-direction: column;  /* Si tienes múltiples elementos y quieres que estén en una columna */
 		width: 100%;
-			margin: 20px auto;
-			text-align: start;
-			
-		  }
+		margin: 20px auto;
+		min-height: 100vh; /* Para asegurar que se centre verticalmente en toda la pantalla */
+	}
+	
 	.pricing-card {
 		display: grid;
-		justify-content: space-between;
-		gap: 20px;
-		padding: 10px;
-	  width: 100%;
+		
+		
+	
+	  width: 85%;
 
 	  }
 	  .star {
@@ -866,7 +870,42 @@ margin-left: 16%;  }
 	  
 	  }
   }
-
+/*prevent*/
+.prevent {
+	text-align: center;
+	   padding: 50px;
+	   border-radius: 10px;
+   }
+   
+   .prevent h1 {
+	   color: #38465A;
+	   font-size: 24px;
+	   margin-bottom: 20px;
+   }
+   
+   .prevent h2 {
+   
+	   font-size:400%;
+	   color:#38465A;
+   
+   }
+   
+   .prevent button {
+	   background-color:#d3db2e;
+	   color: white;
+	   padding: 1px 20px;
+	   border-radius: 5px;
+	   border: none;
+	   font-weight: 700;
+	   height: 40px;
+	   cursor: pointer;
+	   font-size: 28px;
+   }
+   
+   .prevent p {
+	   font-size: 20px;
+	   margin-top: 20px;
+   }
   /*inversion*/
 
 #bluedark{
