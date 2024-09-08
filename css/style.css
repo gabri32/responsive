@@ -899,13 +899,17 @@ margin-left: 16%;  }
 	   cursor: pointer;
 	   font-size: 24px;
    }
+   .prevent button img {
+	max-width: 22px; /* Ajusta el tamaño de las imágenes */
+	margin: 0 5px; /* Espacio entre el texto y las imágenes */
+}
    
    .prevent p {
 	   font-size: 20px;
 	   margin-top: 20px;
    }
 
-   @media (max-width: 768px){
+   @media (max-width: 760px){
 	#finlogo{
 		width: 50%;
 	}
@@ -1030,7 +1034,7 @@ margin-left: 16%;  }
 	color: rgb(249, 249, 249);
 	font-weight: bold;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 760px) {
 	#bluedark{
 		max-height: 100vh;
 		background-color: #0f1517ef;
@@ -1345,14 +1349,42 @@ color: #ffffff;
 	.precio-box {
 		background-color: #B6CD01; /* Ajusta el color verde según tu preferencia */
 		padding: 20px;
-		text-align: left;
+		
 		border-radius: 10px;
 		width: 90%;
 		font-size: 90%;
 		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 	
 	}
-
+	.tarjeta img {
+		width: 80px;
+		height: 80px;
+		margin-bottom: 50%;
+		object-fit: cover;
+		margin-left: -85%;
+		
+		transition: transform 0.5s ease;
+	}
+	
+	
+	.tarjeta h3 {
+		font-size: 1.5em;
+		color: #000000;
+	}
+	
+	.tarjeta p {
+		font-size: 90%;
+	 
+		color: #B6CD01;
+	}
+	.tarjeta:hover img {
+		transform: scale(1.1) rotate(-2deg);
+	}
+	.tarjeta .description {
+   
+	margin-top: -50%;
+		font-size: 90%;
+	}
 }
 /* list */
 .faq {
