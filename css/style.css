@@ -687,7 +687,7 @@ width: 100%;
 		   width: 100%;
 			height: auto;
 		}
-	
+
 
 }
 
@@ -844,9 +844,6 @@ margin-left: 16%;  }
 	
 	.pricing-card {
 		display: grid;
-		
-		
-	
 	  width: 85%;
 
 	  }
@@ -866,7 +863,7 @@ margin-left: 16%;  }
 		letter-spacing: -1px;
 		background-color: #fff;
 		transition: all 400ms ease;
-		margin-left: 10%;
+		margin-left: 0%;
 	  
 	  }
   }
@@ -893,19 +890,75 @@ margin-left: 16%;  }
    .prevent button {
 	   background-color:#d3db2e;
 	   color: white;
+	   width: 80%;
 	   padding: 1px 20px;
 	   border-radius: 5px;
 	   border: none;
 	   font-weight: 700;
 	   height: 40px;
 	   cursor: pointer;
-	   font-size: 28px;
+	   font-size: 24px;
    }
    
    .prevent p {
 	   font-size: 20px;
 	   margin-top: 20px;
    }
+
+   @media (max-width: 768px){
+	#finlogo{
+		width: 50%;
+	}
+	   
+	   .prevent h1 {
+		   color: #38465A;
+		text-align: center;
+		
+		   font-size: 14px;
+		   margin-bottom: 20px;
+		   font-weight: 800;
+		  margin-bottom: 15%;
+	   }
+	   
+	   .prevent h2 {
+	   
+		   font-size:250%;
+		   color:#38465A;
+	   line-height: 65%;
+	   }
+	   
+	   .prevent button {
+		background-color: #d3db2e;
+		color: white;
+		text-align: center; /* Centra el contenido */
+		border-radius: 7px;
+		border: none;
+		font-weight: 600;
+		height: 40px;
+		cursor: pointer;
+		font-size: 100%;
+		width: 100%; /* Asegura que no se salga del contenedor padre */
+		margin-left: 0; /* Elimina el desbordamiento del margen */
+		display: flex; /* Alinea el contenido del botón en línea */
+		justify-content: center; /* Centra el contenido horizontalmente */
+		align-items: center; /* Centra verticalmente el contenido */
+		padding: 5px; /* Agrega espacio interno */
+		overflow: hidden; /* Evita que el contenido se desborde */
+	}
+	
+	.prevent button img {
+		max-width: 20px; /* Ajusta el tamaño de las imágenes */
+		margin: 0 5px; /* Espacio entre el texto y las imágenes */
+	}
+	
+	   
+	   .prevent p {
+		   font-size: 20px;
+		   margin-top: 20px;
+	   }
+	
+}
+
   /*inversion*/
 
 #bluedark{
@@ -977,7 +1030,82 @@ margin-left: 16%;  }
 	color: rgb(249, 249, 249);
 	font-weight: bold;
   }
- 
+  @media (max-width: 768px) {
+	#bluedark{
+		max-height: 100vh;
+		background-color: #0f1517ef;
+	}
+	#texttitleicon {
+		line-height: 0.6; /* Ajusta este valor para hacer el salto de línea más pequeño */
+		margin: 0; 
+		
+	  }
+	  #texttitleicon span {
+		margin: 0;
+		display: block; /* Asegura que el texto "𝔂 𝓻𝓮𝓷𝓽𝓪𝓫𝓲𝓵𝓲𝓭𝓪𝓭" se comporte como un bloque en su propia línea */
+	
+	}
+	#subttitleicon{
+		text-align: justify;
+
+	}
+	#bluedark h2{
+		
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 200%;
+		color: white;
+		max-width: 200%;
+		text-align: center;
+		font-weight: 600;
+		margin-bottom: 15px;
+	}
+	#bluedark p {
+		color: #ffffff;
+		font-size: 10px;
+		margin-right: 0%;
+		max-width: 90%;
+		text-align: center;
+		margin-left: 5%;
+	}
+	
+	#input {
+		display: grid;
+		justify-content: center;
+		 /* Alinea las imágenes en la parte inferior por defecto */
+		gap: 10px;
+		margin-bottom: 50px;
+		/* Espacio entre los elementos */
+	  }
+	
+	  #box {
+		background-color: transparent;
+			border: 2px solid #d3db2e;/* Fondo verde para el cuadro */
+		padding: 20px; /* Espaciado interno para que los elementos no estén pegados al borde */
+		border-radius: 10px; 
+		max-height: 120px;/* Bordes redondeados */
+		text-align: center;
+		width: 100%; /* Ancho máximo del cuadro */
+		justify-content: space-between;
+		margin-bottom: 5%;
+		font-size: 20%
+		 /* Sombra para darle un efecto de elevación */
+	  }
+	  
+	  #icon {
+		max-width: 60%;
+		margin-top: -10%;
+		min-height: 90%;
+	  }
+	
+	  #text2{
+		font-size: 400%;
+		color: rgb(249, 249, 249);
+		font-weight: bold;
+	  }
+	  #finaltitle{
+		margin-top: -10%;
+	}
+  }
   
 
 
@@ -1022,7 +1150,7 @@ margin-top: -10%;
     gap: 10px; /* Espacio de 20px entre las cajas de precio */
    height: 80%;
     width: 100%;
-	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+	
 
 }
 
@@ -1068,7 +1196,35 @@ color: #ffffff;
 	font-size: 100%;
 	color: #000000;
   }
-
+  @media (max-width: 768px) {
+	#yellow {
+		background-color: #73a4116b;
+		display: grid;
+		align-items: flex-start;
+		justify-content: space-between;
+		position: relative;
+		height: 50%;
+		 /* Ajusta la altura según tus necesidades */
+	}
+	.precio-box-container {
+		display: grid;
+		gap: 10px; /* Espacio de 20px entre las cajas de precio */
+	   height: 80%;
+		width: 90%;
+	}
+	.precio-box {
+		background-color: #B6CD01; /* Color de fondo verde */
+		border-radius: 10px;
+		border: 2px solid white; /* Borde blanco de 10px */
+		width: 100%;
+		font-size: 150%;
+	}
+	
+	.texto {
+		font-size: 140%;
+		width: 100%;
+	}
+  }
 
   /*testimonials*/
 
