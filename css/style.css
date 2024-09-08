@@ -503,8 +503,8 @@ font-size: 150%;
 	width: 50%;
 	font-size: 150%;
 	font-weight: 900;
-	height: 500px;
-	border-radius: 10px;
+	max-height: 550px;
+	
 }
 
 .feature {
@@ -631,7 +631,7 @@ font-size: 150%;
 	}
 	.first {
 width: 100%;
-border-radius: 10px;
+
 	}
 	.bantitle{
 		text-align: center;
@@ -688,62 +688,30 @@ border-radius: 10px;
 		   width: 100%;
 			height: auto;
 		}
-
-}
-
-/*prevent*/
-.prevent {
- text-align: center;
-    padding: 50px;
-    border-radius: 10px;
-}
-
-.prevent h1 {
-	color: #38465A;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.prevent h2 {
-
-    font-size:400%;
-    color:#38465A;
 	
+
 }
 
-.prevent button {
-    background-color:#d3db2e;
-    color: white;
-    padding: 1px 20px;
-    border-radius: 5px;
-    border: none;
-	font-weight: 700;
-	height: 40px;
-    cursor: pointer;
-	font-size: 28px;
-}
 
-.prevent p {
-    font-size: 20px;
-    margin-top: 20px;
-}
 
 
 
 /* Portfolio Section */
 #portfolio {
 	padding: 0 0 120px 0;
+	margin-top: 10%;
+
 }
 
 /* Contenedor del carrusel */
 .slider-container {
 	position: relative;
-   min-width: 300px; /* Tamaño máximo de la imagen */
-	min-height: 200px; /* Tamaño máximo de la imagen */
+   max-width: 100vh; /* Tamaño máximo de la imagen */
+	max-height: 60vh; /* Tamaño máximo de la imagen */
 	overflow: hidden;
-	margin: auto;
-	padding-left: 35px;
 	
+margin-left: 7%;
+	border-radius: 10px;
   }
   
   /* Las diapositivas (slides) */
@@ -758,7 +726,7 @@ border-radius: 10px;
   
   /* Las imágenes dentro de las diapositivas */
   .pos {
-	  width: 80%;
+	  width: 70%;
 	  height: 80%;
 	  object-fit: cover;
 	  
@@ -768,7 +736,23 @@ border-radius: 10px;
 .slide.active {
   opacity: 1;
 }
-
+@media screen and (max-width: 968px) {
+	#portfolio {
+		padding: 0 0 120px 0;
+		margin-top: 0%;
+	
+	}
+	.slider-container {
+		position: relative;
+	   min-width: 70vh; /* Tamaño máximo de la imagen */
+		height: 50vh; /* Tamaño máximo de la imagen */
+		overflow: hidden;
+		margin: 0px;
+		border-radius: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+	  }
+}
 
 /* CARDS */
 
