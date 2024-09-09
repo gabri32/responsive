@@ -235,11 +235,13 @@ height: 100vh;
 	
 }
 .imagenes{
-	width: 35%;
 
-	height: 74%;
-	margin-top: 10.1%;
+	width: 35%;
+	height: 100%;
+
 margin-left: 10%;
+display: flex;
+  align-items: flex-end;
 }
 /* Definición de las animaciones */
 @keyframes fadeInUp {
