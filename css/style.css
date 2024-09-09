@@ -1471,7 +1471,7 @@ text-align: center;
   .footer-column {
 	display: flex;
 	flex-direction: column;
-	text-align: justify;
+	text-align: start;
 	margin-right: 10%;
   }
   
