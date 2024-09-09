@@ -518,7 +518,7 @@ font-size: 150%;
    max-width: 22%;
     height: auto;
 }
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 670px) {
 
 	#about {
 		padding: 4% ;
@@ -833,7 +833,7 @@ margin-left: 16%;  }
 	margin: 0 3px;
 	display: inline-block;
   }
-  @media screen and (max-width: 668px) {
+  @media screen and (max-width: 658px) {
 	.pricing-container {
 		display: flex;
 		justify-content: center; /* Centra horizontalmente */
@@ -1038,7 +1038,7 @@ margin-left: 16%;  }
 	color: rgb(249, 249, 249);
 	font-weight: bold;
   }
-  @media (max-width: 760px) {
+  @media (max-width: 660px) {
 	#bluedark{
 		max-height: 100vh;
 		background-color: #0f1517ef;
