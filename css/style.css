@@ -908,7 +908,9 @@ margin-left: 16%;  }
 	   font-size: 20px;
 	   margin-top: 20px;
    }
-
+   #finlogo{
+	width: 50%;
+}
    @media (max-width: 760px){
 	#finlogo{
 		width: 50%;
@@ -1270,8 +1272,7 @@ color: #ffffff;
 
 .tarjeta {
     position: relative;
-	background: linear-gradient(to bottom, #ffffff00 50%, #b5d33d 50%);
-
+background-color: #b5d33d;
     border-radius: 15px;
     padding: 20px;
     text-align: center;
@@ -1338,52 +1339,63 @@ color: #ffffff;
 }
 
 @media (max-width: 768px) {
-    .testimonials {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tarjeta {
-        width: 80%;
-    }
-	.precio-box {
-		background-color: #B6CD01; /* Ajusta el color verde según tu preferencia */
-		padding: 20px;
-		
-		border-radius: 10px;
-		width: 90%;
-		font-size: 90%;
-		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-	
+	.testimonials {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		gap: 80px;
+		line-height: 70%;
 	}
 	.tarjeta img {
-		width: 80px;
-		height: 80px;
-		margin-bottom: 50%;
-		object-fit: cover;
-		margin-left: -85%;
+		width: 20%;
+		height: 20%;
 		
+		margin-left: -90%;
 		transition: transform 0.5s ease;
+		margin-top: -80%;
+		margin-bottom: 0%;
 	}
-	
-	
+	.tarjeta {
+		position: relative;
+		background-color: #b5d33d;
+		border-radius: 15px;
+		padding: 20px;
+		text-align: center;
+		color: #ffffff;
+		font-weight: bold;
+		width: 350px;
+		max-height: 100px;
+		transition: transform 0.5s ease, box-shadow 0.5s ease;
+	}
 	.tarjeta h3 {
-		font-size: 1.5em;
+		font-size: 1.2em;
 		color: #000000;
+	width: 100%;
+	text-align: start;
+	margin-left: 18%;
+	line-height: 5%;
+	
 	}
 	
 	.tarjeta p {
-		font-size: 90%;
-	 
+		font-size: 100%;
 		color: #B6CD01;
-	}
-	.tarjeta:hover img {
-		transform: scale(1.1) rotate(-2deg);
+		width: 80%;
+		text-align: start;
+		margin-left: 18%;
 	}
 	.tarjeta .description {
-   
-	margin-top: -50%;
+
+		padding: 15px;
+		border-radius: 10px;
 		font-size: 90%;
+		margin-top:-30%;
+	}
+	.hijocontent{
+		transform: scaleY(100%);
+		transform: translateY(-80px);
+		margin-bottom: 10%; 
+
 	}
 }
 /* list */
@@ -1397,8 +1409,8 @@ color: #ffffff;
 	
     background-color: #b5cd01aa;
     padding: 15px;
-	max-width: 70%;
-	margin-left: 15%;
+	max-width: 80%;
+	margin-left: 10%;
 	
     cursor: pointer;
 	border-radius: 10px;
@@ -1417,8 +1429,8 @@ color: #ffffff;
 	background-color: #b5cd0152;
     padding: 0 15px;
 	color: #38465A;
-	max-width: 70%;
-	margin-left: 15%;
+	max-width: 80%;
+	margin-left: 10%;
 	text-align: justify;
 	border-radius: 10px;
 	transition: max-height 0.8s ease-out;
