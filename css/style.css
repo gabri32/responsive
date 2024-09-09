@@ -909,11 +909,11 @@ margin-left: 16%;  }
 	   margin-top: 20px;
    }
    #finlogo{
-	width: 50%;
+	width: 20%;
 }
    @media (max-width: 760px){
 	#finlogo{
-		width: 50%;
+		width: 40%;
 	}
 	   
 	   .prevent h1 {
@@ -1272,7 +1272,7 @@ color: #ffffff;
 
 .tarjeta {
     position: relative;
-background-color: #b5d33d;
+	background: linear-gradient(to top, #B6CD01 50%, rgba(255, 255, 255, 0) 50%);
     border-radius: 15px;
     padding: 20px;
     text-align: center;
