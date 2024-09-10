@@ -38,3 +38,15 @@ $(document).ready(function() {
 
 // Selecciona todos los elementos que quieres animar
 
+function loadForm() {
+  fetch('formulario.html') // Cargar el archivo HTML del formulario
+      .then(response => response.text())
+      .then(html => {
+          document.getElementById('form-container').innerHTML = html;
+          document.getElementById('form-container').style.display = 'block';
+      });
+}
+
+function closeForm() {
+  document.getElementById("form-container").style.display = "none";
+}
