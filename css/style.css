@@ -934,6 +934,7 @@ margin-left: 16%;  }
 	text-align: center;
 	padding: 50px;
 	border-radius: 10px;
+	
   }
   .botonregistro button{
 		background-color: #d3db2e;
@@ -948,7 +949,7 @@ margin-left: 16%;  }
 		font-size: 24px;
 		animation: bounce 2s infinite; /* Agrega la animación */
 		box-shadow: 0 1px 10px rgba(0, 0, 0, 1.2);
-	  
+		
   }
    .prevent button img {
 	max-width: 22px; /* Ajusta el tamaño de las imágenes */
@@ -1014,6 +1015,32 @@ margin-left: 16%;  }
 		   margin-top: 20px;
 	   }
 	
+	   .botonregistro{
+		text-align: center;
+		padding: 50px;
+		border-radius: 10px;
+		height: 10%;
+		margin-top: -63%;
+		
+		
+	  }
+	  .botonregistro img {
+	width: 9%;
+	  }
+	  .botonregistro button{
+			background-color: #d3db2e;
+			color: white;
+			width: 100%;	
+			padding: 1px 20px;
+			border-radius: 5px;
+			border: none;
+			font-weight: 700;
+			height: 50px;
+			cursor: pointer;
+			font-size: 15px;
+			animation: bounce 2s infinite; /* Agrega la animación */
+			box-shadow: 0 1px 10px rgba(0, 0, 0, 1.2);
+	  }
 }
 
   /*inversion*/

@@ -29,12 +29,7 @@ questions.forEach(question => {
     });
 });
 
-$(document).ready(function() {
-    $(".elemento").click(function() {
-        console.log("entra", num); // Asegúrate de que 'num' esté definido en algún lugar.
-        $(this).animate({top: '200px'}, 500);
-    });
-});
+
 
 // Selecciona todos los elementos que quieres animar
 
