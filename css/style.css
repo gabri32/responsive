@@ -930,7 +930,26 @@ margin-left: 16%;  }
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 1.2);
 
   }
-  
+  .botonregistro{
+	text-align: center;
+	padding: 50px;
+	border-radius: 10px;
+  }
+  .botonregistro button{
+		background-color: #d3db2e;
+		color: white;
+		width: 50%;	
+		padding: 1px 20px;
+		border-radius: 5px;
+		border: none;
+		font-weight: 700;
+		height: 60px;
+		cursor: pointer;
+		font-size: 24px;
+		animation: bounce 2s infinite; /* Agrega la animación */
+		box-shadow: 0 1px 10px rgba(0, 0, 0, 1.2);
+	  
+  }
    .prevent button img {
 	max-width: 22px; /* Ajusta el tamaño de las imágenes */
 	margin: 0 5px; /* Espacio entre el texto y las imágenes */
@@ -1508,7 +1527,8 @@ color: #ffffff;
 	font-size: 150%;
 	font-weight: 900;
 	border: none;
-	
+	width: 20%;
+	height: 30%;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -1639,7 +1659,7 @@ color: #ffffff;
 	
 }
 .form-header{
-	font-size: 10px;
+	font-size: 12px;
 
 }
 .form-container {
@@ -1648,7 +1668,7 @@ color: #ffffff;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #000000;
+    background-color: #0F1517;
     padding: 20px;
     border-radius: 10px;
     border: 6px solid #b0ff00; /* Borde de color verde fluorescente */
@@ -1666,50 +1686,53 @@ color: #ffffff;
     background-color: #ffffff00;
     font-size: 20px;
     cursor: pointer;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 1.2);
     text-align: end;
-    transform: translateY(-100px); /* Mover 100px en el eje Y */
+    transform: translateY(-400%); /* Mover 100px en el eje Y */
 }
 .registro{
 	display: grid;
-	box-shadow: 0 1px 10px rgba(0, 0, 0, 1.2);
+	
 }
-.registro label{
-
+#dato{
 	font-size: 15px;
 	text-align: start;
-	color: #ffffff;
+	color: #ffffff
 }
+
 .input {
-	border-radius: 10px;
+	border-radius: 40px;
 	height: 180%;
 	font-size: 18px;
 	color: #ffffff;
-	background-color: #B6CD0166;
+	background-color: #82cd0169;
 	text-align: center;
 
 }
 .submit-btn {
+	display: inline-block;
 	width: 100%;
 	padding: 10px;
-	background-color: #;
-	color: rgb(0, 0, 0);
+	background-color: #f9f4f4;
+	text-align: center;
 	border: none;
-	border-radius: 5px;
-	font-size: 16px;
+	border-radius: 30px;
+	font-size: 25px;
 	cursor: pointer;
 	margin-bottom: 20px;
+	
 }
 
 .social-icons {
 	display: flex;
 	justify-content: space-evenly;
 	margin-bottom: 20px;
+
+}
+.social-icons img {
+	
+width: 170%;
+	
+
 }
 
-.social-icons img {
-	width: 30px;
-	height: 30px;
-}
-	
 	
