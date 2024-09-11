@@ -50,21 +50,18 @@ function loadForm() {
 function closeForm() {
   document.getElementById("form-container").style.display = "none";
 }
-function enviarWhatsApp() {
-  // Capturamos los datos del formulario
-  var nombre = document.getElementById('nombre').value;
-  var telefono = document.getElementById('telefono').value;
-  var email = document.getElementById('email').value;
+function enviarAWhatsApp() {
+  // Obtener los valores del formulario
+  var nombre = document.getElementById("nombre").value;
+  var telefono = document.getElementById("telefono").value;
+  var email = document.getElementById("email").value;
 
-  // Creamos el mensaje
-  var mensaje = `Hola! Mi nombre es ${nombre}, mi teléfono es ${telefono}, y mi correo es ${email}. Me gustaría obtener más información.`;
+  // Crear el mensaje para enviar a WhatsApp
+  var mensaje = "Hola! Mi nombre es " + nombre + ", mi teléfono es " + telefono + " y mi correo es " + email + ". Me gustaría obtener más información.";
 
-  // Número de WhatsApp al que se enviará el mensaje
-  var numeroWhatsApp = "573172260184";
+  // Crear el enlace de WhatsApp con el mensaje
+  var url = "https://wa.me/573172260184?text=" + encodeURIComponent(mensaje);
 
-  // Crear la URL de WhatsApp con el mensaje
-  var url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
-
-  // Redireccionar a la URL de WhatsApp
+  // Redirigir a la URL de WhatsApp
   window.open(url, '_blank');
 }
