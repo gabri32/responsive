@@ -946,7 +946,7 @@ margin-left: 16%;  }
 		font-weight: 700;
 		height: 60px;
 		cursor: pointer;
-		font-size: 24px;
+		font-size: 20px;
 		animation: bounce 2s infinite; /* Agrega la animación */
 		box-shadow: 0 1px 10px rgba(0, 0, 0, 1.2);
 		
