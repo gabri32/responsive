@@ -983,21 +983,20 @@ margin-left: 16%;  }
 	border-radius: 10px;
 	
   }
-  .botonregistro button{
-		background-color: #d3db2e;
-		color: white;
-		width: 60%;	
-		padding: 1px 20px;
-		border-radius: 5px;
-		border: none;
-		font-weight: 700;
-		height: 60px;
-		cursor: pointer;
-		font-size: 20px;
-		animation: bounce 2s infinite; /* Agrega la animación */
-		box-shadow: 0 1px 10px rgba(0, 0, 0, 1.2);
-		
-  }
+  .botonregistro button {
+	background-color: #d3db2e;
+	color: white;
+	width: 60%;	
+	padding: 1px 20px;
+	border-radius: 10px;
+	border: 4px solid #38465A; /* Borde negro */
+	font-weight: 700;
+	height: 60px;
+	cursor: pointer;
+	font-size: 20px;
+	animation: bounce 2s infinite; /* Animación de rebote */
+	
+}
    .prevent button img {
 	max-width: 22px; /* Ajusta el tamaño de las imágenes */
 	margin: 0 5px; /* Espacio entre el texto y las imágenes */
