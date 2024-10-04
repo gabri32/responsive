@@ -239,12 +239,12 @@ height: 100vh;
 	text-align: center;
 	background-color: #BDD21B;
 	margin-top: -10%;
-	height: 13%;
+	height: 10%;
 	font-size: 200%;
 }
 .barra p{
 	position: relative;
-	margin-left: -40%;
+	margin-left: -20%;
 	font-weight:900;
 	color: #384347;
 
