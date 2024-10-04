@@ -242,7 +242,13 @@ height: 100vh;
 	height: 13%;
 	font-size: 200%;
 }
+.barra p{
+	position: relative;
+	margin-left: 0%;
+	font-weight:900;
+	color: #00b5f7;
 
+}
 .lineacolor{
 	position: relative;
 	background: linear-gradient(1deg, #B6CD01, #FFFFFF);
@@ -372,13 +378,7 @@ height: 50vh;
 	height: 8%;
 	font-size: 80%;
 }
-.barra p{
-	position: relative;
-	margin-left: 0%;
-	font-weight:900;
-	color: #384347;
 
-}
 .lineacolor{
 	position: relative;
 	background: linear-gradient(1deg, #B6CD01, #FFFFFF);
