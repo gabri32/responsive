@@ -374,13 +374,13 @@ height: 50vh;
 	position: relative;
 	text-align: center;
 	background-color: #BDD21B;
-	margin-top: -20%;
+	margin-top: -25%;
 	height: 8%;
-	font-size: 120%;
+	font-size: 80%;
 }
 .barra p{
 	position: relative;
-	margin-left: -100px;
+	margin-left: 0%;
 	font-weight:900;
 	color: #384347;
 
