@@ -234,6 +234,27 @@ height: 100vh;
 
 	
 }
+.barra{
+	position: relative;
+	text-align: center;
+	background-color: #BDD21B;
+	margin-top: -10%;
+	height: 13%;
+	font-size: 200%;
+}
+.barra p{
+	position: relative;
+	margin-left: -40%;
+	font-weight:900;
+	color: #384347;
+
+}
+.lineacolor{
+	position: relative;
+	background: linear-gradient(1deg, #B6CD01, #FFFFFF);
+	height: 10px;
+	
+}
 .imagenes{
 
 	width: 35%;
@@ -243,6 +264,11 @@ margin-left: 10%;
 display: flex;
   align-items: flex-end;
 }
+
+/*boton diseno*/
+
+
+
 /* Definición de las animaciones */
 @keyframes fadeInUp {
 	from {
@@ -344,7 +370,27 @@ height: 50vh;
 	height: 100%;
 	
   }
+  .barra{
+	position: relative;
+	text-align: center;
+	background-color: #BDD21B;
+	margin-top: -20%;
+	height: 8%;
+	font-size: 120%;
+}
+.barra p{
+	position: relative;
+	margin-left: -100px;
+	font-weight:900;
+	color: #384347;
 
+}
+.lineacolor{
+	position: relative;
+	background: linear-gradient(1deg, #B6CD01, #FFFFFF);
+	height: 10px;
+	
+}
 }
 /* About Section */
 #about {
