@@ -747,10 +747,11 @@ width: 100%;
 
 /* Portfolio Section */
 #portfolio {
-	padding-top: 5%;
-	width: 75%; /* Cubre el 80% del ancho del contenedor */
+	padding-top: 0%;
+	width: 65%; /* Cubre el 80% del ancho del contenedor */
 	margin: 0 auto; /* Centrar el contenedor en la página */
-	overflow: hidden; /* Ocultar las imágenes que se salen del contenedor */
+	overflow: hidden;
+	height: auto%; /* Ocultar las imágenes que se salen del contenedor */
   }
   
   .slider-container {
