@@ -497,27 +497,28 @@ height: 50vh;
     display: flex;
     justify-content: space-between;
     color: #ffffff;
+	height: 900px;
 }
 .baner p{
-  font-size: 140%;
+  font-size: 170%;
 	color: #ffffff;;
 }
 .tipo p{color: #000000;
-font-size: 150%;}
+font-size: 170%;}
 
 .first {
 	width: 50%;
     background-color: #B7CD02;
     color: #000000;
 	padding: 50px;
-	max-height: 500px;
+	max-height: 700px;
 }
 
 .first ul {
 margin-left: 15%;
 margin-top:-6%;
 font-weight: 900;
-font-size: 150%;
+font-size: 170%;
 }
 .bantitle{
 	text-align: center;
@@ -536,6 +537,7 @@ font-size: 150%;
 	margin-top: 10%;
     font-weight: 900;
     color: #38465A;
+	font-size: 200%;
 }
 
 
@@ -550,18 +552,19 @@ font-size: 150%;
 	width: 50%;
 	font-size: 150%;
 	font-weight: 900;
-	max-height: 550px;
+	max-height: 700px;
 	
 }
 
 .feature {
     display: flex;
     align-items: center;
+	font-size: 120%;
 }
 
 .feature .icon {
     margin-right: 10px;
-   max-width: 22%;
+   max-width: 150%;
     height: auto;
 }
 @media screen and (max-width: 670px) {
