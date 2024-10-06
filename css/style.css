@@ -751,7 +751,7 @@ width: 100%;
 	width: 65%; /* Cubre el 80% del ancho del contenedor */
 	margin: 0 auto; /* Centrar el contenedor en la página */
 	overflow: hidden;
-	height: auto%; /* Ocultar las imágenes que se salen del contenedor */
+	height: auto; /* Ocultar las imágenes que se salen del contenedor */
   }
   
   .slider-container {
