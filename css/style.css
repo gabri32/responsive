@@ -748,7 +748,7 @@ width: 100%;
 /* Portfolio Section */
 #portfolio {
 	padding-top: 5%;
-	width: 80%; /* Cubre el 80% del ancho del contenedor */
+	width: 85%; /* Cubre el 80% del ancho del contenedor */
 	margin: 0 auto; /* Centrar el contenedor en la página */
 	overflow: hidden; /* Ocultar las imágenes que se salen del contenedor */
   }
