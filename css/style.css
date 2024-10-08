@@ -1149,7 +1149,7 @@ margin-top: -3%;
 		border: 2px solid #d3db2e;/* Fondo verde para el cuadro */
 	padding: 20px; /* Espaciado interno para que los elementos no estén pegados al borde */
 	border-radius: 10px; 
-	max-height: 160px;/* Bordes redondeados */
+	max-height: 170px;/* Bordes redondeados */
 	text-align: center;
 	width: 12%; /* Ancho máximo del cuadro */
 	justify-content: space-between;
