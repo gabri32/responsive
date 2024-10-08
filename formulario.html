@@ -49,12 +49,12 @@ function enviarAWhatsApp() {
     // Definir los números de contacto para cada ruta
     var contactos = {
         '/contacto1': '573172260184',  // Número para contacto 1
-        '/contacto2': '573172260185',  // Número para contacto 2
-        '/contacto3': '573172260186'   // Número para contacto 3
+        '/contacto2': '573205479439',  // Número para contacto 2
+      //  '/contacto3': '573172260186'   // Número para contacto 3
     };
 
     // Obtener el número de WhatsApp basado en la ruta
-    var numeroWhatsApp = contactos[currentPath] || '573172260184'; // Número por defecto si no hay coincidencia
+    var numeroWhatsApp = contactos[currentPath] || '573172260184'; 
 
     // Crear la URL de WhatsApp con el número y el mensaje
     var url = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(mensaje);
