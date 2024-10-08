@@ -743,7 +743,7 @@ width: 100%;
 		
 		.feature .icon {
 			margin-left: 40%;
-		   width: 12%;
+		   width: 25%;
 			height: auto;
 		}
 
@@ -757,13 +757,15 @@ width: 100%;
 	width: 65%; /* Cubre el 80% del ancho del contenedor */
 	margin: 0 auto; /* Centrar el contenedor en la página */
 	overflow: hidden;
-	height: auto; /* Ocultar las imágenes que se salen del contenedor */
+	height: auto; 
+	/* Ocultar las imágenes que se salen del contenedor */
   }
   
   .slider-container {
 	display: flex;
 	transition: transform 1s ease-in-out; /* Transición suave entre las imágenes */
 	width: 100%;
+	margin-top: 40px;
 	height: auto; /* Asegura que el contenedor ocupe todo el ancho */
   }
   
@@ -1380,6 +1382,12 @@ color: #ffffff;
 	.texto {
 		font-size: 140%;
 		width: 95%;
+	}
+	.cheque{
+		width: 100%;
+	}
+	.cheque img {
+		width: 100%;
 	}
   }
 
