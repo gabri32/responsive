@@ -468,7 +468,7 @@ height: 50vh;
 	margin-left: 45%;
     gap: 1rem; /* Adjust the gap between the image and text */
 	width: 60%;
-	font-size: 2.5vw;
+	font-size: 1vw;
 	margin-bottom: 30%;
 	
 }
@@ -642,7 +642,7 @@ font-size: 170%;
 		margin-bottom: 0px;
 		max-height: 27vh;
 		margin-top: 0%;
-		
+		font-size: 2vw;
 	}
 	.image-and-text img{
 		max-width: 15%; /* Adjust the gap between the image and text */
