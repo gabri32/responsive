@@ -16,6 +16,7 @@
     <input class="input" type="email" id="email" name="email" placeholder="lomitas@gmail.com">
     <br><br>
     <label type="button" class="submit-btn" style="color:#B7CD02;" onclick="enviarAWhatsApp()">Enviar</label>
+
 </form>
 
 <p>O ponte en contacto con los siguientes enlaces</p>
@@ -34,32 +35,24 @@
 <h3>Club Lomitas</h3>
 
 <script>
-function enviarAWhatsApp() {
-    // Obtener los valores del formulario
-    var nombre = document.getElementById("nombre").value;
-    var telefono = document.getElementById("telefono").value;
-    var email = document.getElementById("email").value;
-
-    // Crear el mensaje para enviar a WhatsApp
-    var mensaje = "Hola! Mi nombre es " + nombre + ", mi teléfono es " + telefono + " y mi correo es " + email + ". Me gustaría obtener más información.";
-
-    // Obtener la ruta actual de la URL
-    var currentPath = window.location.pathname;
-
-    // Definir los números de contacto para cada ruta
-    var contactos = {
-        '/contacto1': '573172260184',  // Número para contacto 1
-        '/contacto2': '573205479439',  // Número para contacto 2
-      //  '/contacto3': '573172260186'   // Número para contacto 3
-    };
-
-    // Obtener el número de WhatsApp basado en la ruta
-    var numeroWhatsApp = contactos[currentPath] || '573172260184'; 
-
-    // Crear la URL de WhatsApp con el número y el mensaje
-    var url = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(mensaje);
-
-    // Redirigir a la URL de WhatsApp
-    window.open(url, '_blank');
-}
-</script>
+    function enviarAWhatsApp() {
+        // Obtener los valores del formulario
+        var nombre = document.getElementById("nombre").value;
+        var telefono = document.getElementById("telefono").value;
+        var email = document.getElementById("email").value;
+    
+        // Crear el mensaje para enviar a WhatsApp
+        var mensaje = "Hola! Mi nombre es " + nombre + ", mi teléfono es " + telefono + " y mi correo es " + email + ". Me gustaría obtener más información.";
+    
+        // Obtener el número de WhatsApp desde el parámetro en la URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var numeroWhatsApp = urlParams.get('numero') || '573172260184'; // Número por defecto si no hay parámetro
+    
+        // Crear el enlace de WhatsApp con el número y el mensaje
+        var url = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(mensaje);
+    
+        // Redirigir a la URL de WhatsApp
+        window.open(url, '_blank');
+    }
+    </script>
+    
