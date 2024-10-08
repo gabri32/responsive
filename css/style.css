@@ -659,8 +659,8 @@ font-size: 170%;
 	  }
 	.about-img img {
  
-		width: 100%;
-		height: 100%;
+		width: 75%;
+		height: auto;
 	  margin-left:  0%;/* Adjust the maximum width as needed */
 	margin-top: 0px;
 	margin-bottom:0px ;
@@ -1007,7 +1007,7 @@ margin-top: -20%;
 .botonregistro img {
 	position: relative;
 margin-left: -2%;
-margin-top: 9%;
+margin-top: 12%;
 animation: bounce 2s infinite; /* Animación de rebote */
 	
 }
