@@ -1645,7 +1645,7 @@ color: #ffffff;
   }
   
   .footer-logo img {
-	width: 70%;
+	width: 65%;
 	min-width: 30%;
 	padding-left: 1%;
   }
@@ -1692,7 +1692,7 @@ color: #ffffff;
   .footer-socials a {
 	display: inline-block;
 	margin-right: 1.5%;
-	width: 25%;
+	width: 100%;
   }
   
   .footer-socials img {
