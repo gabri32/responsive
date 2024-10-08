@@ -1699,7 +1699,18 @@ color: #ffffff;
 	width: 100%;
 	height: auto;
   }
-  
+  @media (max-width: 768px) {
+	.footer-socials a {
+		display: inline-block;
+		margin-right: 1.5%;
+		width: 300%;
+	  }
+	  .footer-logo img {
+		width: 150%;
+		min-width: 30%;
+		padding-left: 1%;
+	  }
+  }
   .paisaje {
     width: 100%;
     overflow: hidden; /* Asegura que no haya desbordamiento si la imagen es más grande */
