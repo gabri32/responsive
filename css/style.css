@@ -1637,6 +1637,7 @@ color: #ffffff;
 	gap: 10px;
 	animation: bounce 2s infinite; /* Agrega la animación */
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 1.2);
+	border: 4px solid #B6CD01; /* Borde negro */
   }
   
   .contact-button img {
