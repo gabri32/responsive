@@ -16,7 +16,6 @@
     <input class="input" type="email" id="email" name="email" placeholder="lomitas@gmail.com">
     <br><br>
     <label type="button" class="submit-btn" style="color:#B7CD02;" onclick="enviarAWhatsApp()">Enviar</label>
-
 </form>
 
 <p>O ponte en contacto con los siguientes enlaces</p>
@@ -44,8 +43,21 @@ function enviarAWhatsApp() {
     // Crear el mensaje para enviar a WhatsApp
     var mensaje = "Hola! Mi nombre es " + nombre + ", mi teléfono es " + telefono + " y mi correo es " + email + ". Me gustaría obtener más información.";
 
-    // Crear el enlace de WhatsApp con el mensaje
-    var url = "https://wa.me/573172260184?text=" + encodeURIComponent(mensaje);
+    // Obtener la ruta actual de la URL
+    var currentPath = window.location.pathname;
+
+    // Definir los números de contacto para cada ruta
+    var contactos = {
+        '/contacto1': '573172260184',  // Número para contacto 1
+        '/contacto2': '573172260185',  // Número para contacto 2
+        '/contacto3': '573172260186'   // Número para contacto 3
+    };
+
+    // Obtener el número de WhatsApp basado en la ruta
+    var numeroWhatsApp = contactos[currentPath] || '573172260184'; // Número por defecto si no hay coincidencia
+
+    // Crear la URL de WhatsApp con el número y el mensaje
+    var url = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(mensaje);
 
     // Redirigir a la URL de WhatsApp
     window.open(url, '_blank');
