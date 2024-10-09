@@ -46,12 +46,12 @@ function enviarAWhatsApp() {
 
   // Crear el enlace de WhatsApp con el mensaje
   var urlWhatsApp = "https://wa.me/573172260184?text=" + encodeURIComponent(mensaje);
-
+  var urlSheet = "https://script.google.com/macros/s/AKfycbyQ4RzGUFnvEHRVvrc2H0p9tcX12C0rcvN_gjssLkkPamo-lvXaAYAZvTdF11kmx6fU/exec?nombre=" + encodeURIComponent(nombre) + "&telefono=" + encodeURIComponent(telefono) + "&email=" + encodeURIComponent(email);
   // Redirigir a la URL de WhatsApp
   window.open(urlWhatsApp, '_blank');
 
   // Enviar los datos a Google Sheets
-  var urlSheet = "https://script.google.com/macros/s/AKfycbyQ4RzGUFnvEHRVvrc2H0p9tcX12C0rcvN_gjssLkkPamo-lvXaAYAZvTdF11kmx6fU/exec?nombre=" + encodeURIComponent(nombre) + "&telefono=" + encodeURIComponent(telefono) + "&email=" + encodeURIComponent(email);
+  
 
   fetch(urlSheet)
     .then(response => response.text())
