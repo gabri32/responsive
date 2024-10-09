@@ -41,7 +41,14 @@ function loadForm() {
           document.getElementById('form-container').style.display = 'block';
       });
 }
-
+function loadForm2() {
+  fetch('formulario2.html') // Cargar el archivo HTML del formulario
+      .then(response => response.text())
+      .then(html => {
+          document.getElementById('form-container').innerHTML = html;
+          document.getElementById('form-container').style.display = 'block';
+      });
+}
 function closeForm() {
   document.getElementById("form-container").style.display = "none";
 }

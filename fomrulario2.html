@@ -1,0 +1,58 @@
+<div class="form-header">
+    <h2 style="font-family:fat;font-size: 370%;color: #B7CD02;">Formulario
+        <br> <span style="color: aliceblue;font-family:Arial;font-size: 70%;">de registro</span>  
+        <span style="font-family:Arial;font-size: 70%;font-weight: 900;"><br>10% dto</span>
+    </h2>
+    <div class="close-form-btn" onclick="closeForm()">✖</div>
+</div>
+<form class="registro" id="registroForm">
+    <label id="dato" for="nombre">Nombre</label>
+    <input class="input" type="text" id="nombre" name="nombre" placeholder="Lomitas">
+    <br>
+    <label id="dato" for="telefono">Teléfono</label>
+    <input class="input" type="text" id="telefono" name="telefono" placeholder="3333333333">
+    <br>
+    <label id="dato" for="email">Correo electrónico</label>
+    <input class="input" type="email" id="email" name="email" placeholder="lomitas@gmail.com">
+    <br><br>
+    <label type="button" class="submit-btn" style="color:#B7CD02;" onclick="enviarAWhatsApp()">Enviar</label>
+
+</form>
+
+<p>O ponte en contacto con los siguientes enlaces</p>
+<div class="social-icons">
+    <a href="https://wa.me/573205479439?text=%Hola!%20Me%20gustaría%20obtener%20más%20información">
+        <img src="assets/images/icons/vectorw.png" alt="WhatsApp">
+    </a>
+    <a href="https://www.instagram.com/club_lomitas?igsh=MTIwaGw0dXR1Nm80Zw==" target="_blank">
+        <img src="assets/images/icons/vectoi.png" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61555548374236&mibextid=LQQJ4d">
+        <img src="assets/images/icons/vectorf.png" alt="Facebook">
+    </a>
+</div>
+
+<h3>Club Lomitas</h3>
+
+<script>
+    function enviarAWhatsApp() {
+        // Obtener los valores del formulario
+        var nombre = document.getElementById("nombre").value;
+        var telefono = document.getElementById("telefono").value;
+        var email = document.getElementById("email").value;
+    
+        // Crear el mensaje para enviar a WhatsApp
+        var mensaje = "Hola! Mi nombre es " + nombre + ", mi teléfono es " + telefono + " y mi correo es " + email + ". Me gustaría obtener más información.";
+    
+        // Obtener el número de WhatsApp desde el parámetro en la URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var numeroWhatsApp = urlParams.get('numero') || '573205479439'; // Número por defecto si no hay parámetro
+    
+        // Crear el enlace de WhatsApp con el número y el mensaje
+        var url = "https://wa.me/" + numeroWhatsApp + "?text=" + encodeURIComponent(mensaje);
+    
+        // Redirigir a la URL de WhatsApp
+        window.open(url, '_blank');
+    }
+    </script>
+    
