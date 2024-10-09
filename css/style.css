@@ -1577,7 +1577,7 @@ color: #ffffff;
 .question {
 	
     background-color: #b5cd01aa;
-    padding: 15px;
+    padding: 9px;
 	max-width: 80%;
 	margin-left: 10%;
 	
@@ -1713,7 +1713,7 @@ color: #ffffff;
   .footer-socials a {
 	display: inline-block;
 	margin-right: 1.5%;
-	width: 100%;
+	width: 25%;
   }
   
   .footer-socials img {
