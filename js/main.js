@@ -62,7 +62,30 @@ function enviarAWhatsApp() {
   var mensaje = "Hola! Mi nombre es " + nombre + ", mi teléfono es " + telefono + " y mi correo es " + email + ". Me gustaría obtener más información.";
 
   // Crear el enlace de WhatsApp con el mensaje
-  var url = "https://wa.me/573172260184?text=" + encodeURIComponent(mensaje);
+  var urlWhatsApp = "https://wa.me/573172260184?text=" + encodeURIComponent(mensaje);
+
+  // Redirigir a la URL de WhatsApp
+  window.open(urlWhatsApp, '_blank');
+
+  // Enviar los datos a Google Sheets
+  var urlSheet = "https://script.google.com/macros/s/AKfycbyQ4RzGUFnvEHRVvrc2H0p9tcX12C0rcvN_gjssLkkPamo-lvXaAYAZvTdF11kmx6fU/exec?nombre=" + encodeURIComponent(nombre) + "&telefono=" + encodeURIComponent(telefono) + "&email=" + encodeURIComponent(email);
+
+  fetch(urlSheet)
+    .then(response => response.text())
+    .then(data => console.log("Datos enviados a Google Sheets:", data))
+    .catch(error => console.error('Error al enviar los datos a Google Sheets:', error));
+}
+function enviarAWhatsApp2() {
+  // Obtener los valores del formulario
+  var nombre = document.getElementById("nombre").value;
+  var telefono = document.getElementById("telefono").value;
+  var email = document.getElementById("email").value;
+
+  // Crear el mensaje para enviar a WhatsApp
+  var mensaje = "Hola! Mi nombre es " + nombre + ", mi teléfono es " + telefono + " y mi correo es " + email + ". Me gustaría obtener más información.";
+
+  // Crear el enlace de WhatsApp con el mensaje
+  var url = "https://wa.me/573205479439?text=" + encodeURIComponent(mensaje);
 
   // Redirigir a la URL de WhatsApp
   window.open(url, '_blank');
