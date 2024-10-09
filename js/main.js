@@ -60,22 +60,27 @@ function enviarAWhatsApp() {
 
   // Crear el mensaje para enviar a WhatsApp
   var mensaje = "Hola! Mi nombre es " + nombre + ", mi teléfono es " + telefono + " y mi correo es " + email + ". Me gustaría obtener más información.";
-  
-  // Nueva URL del script de Google Sheets
-  var urlSheet = "https://script.google.com/macros/s/AKfycbzgS10Em2w_eSP6rvp4BekHbbmnBtA_2YdhocHxwNPQnaqeL9SdnPtplCQucDrqGdyH/exec?nombre=" + encodeURIComponent(nombre) + "&telefono=" + encodeURIComponent(telefono) + "&email=" + encodeURIComponent(email);    
+  var urlSheet = "https://script.google.com/macros/s/AKfycbw0OFsflL4TTbFUXFsJKX_WGLCLZ82RtVcBtlSB-P-Ck7km6jWNI3w2aRpq-wm8DVg/exec?nombre=" + encodeURIComponent(nombre) + "&telefono=" + encodeURIComponent(telefono) + "&email=" + encodeURIComponent(email);    
 
   // Crear el enlace de WhatsApp con el mensaje
   var urlWhatsApp = "https://wa.me/573172260184?text=" + encodeURIComponent(mensaje);
 
-  // Redirigir a la URL de WhatsApp
-  window.open(urlWhatsApp, '_blank');
-
   // Enviar los datos a Google Sheets
   fetch(urlSheet)
-    .then(response => response.text())
-    .then(data => console.log("Datos enviados a Google Sheets:", data))
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Error al enviar datos a Google Sheets: ' + response.statusText);
+      }
+      return response.text();
+    })
+    .then(data => {
+      console.log("Datos enviados a Google Sheets:", data);
+      // Redirigir a la URL de WhatsApp solo después de que los datos se hayan enviado
+      window.open(urlWhatsApp, '_blank');
+    })
     .catch(error => console.error('Error al enviar los datos a Google Sheets:', error));
 }
+
 
 
 function enviarAWhatsApp2() {
