@@ -43,8 +43,7 @@
     
         // Crear el mensaje para enviar a WhatsApp
         var mensaje = "Hola! Mi nombre es " + nombre + ", mi teléfono es " + telefono + " y mi correo es " + email + ". Me gustaría obtener más información.";
-  var urlSheet = "https://script.google.com/macros/s/AKfycbyQ4RzGUFnvEHRVvrc2H0p9tcX12C0rcvN_gjssLkkPamo-lvXaAYAZvTdF11kmx6fU/exec?nombre=" + encodeURIComponent(nombre) + "&telefono=" + encodeURIComponent(telefono) + "&email=" + encodeURIComponent(email);
-    
+        var urlSheet = "https://script.google.com/macros/s/AKfycbyEIOdFLhuMSOIp0vaG4cNmnkIemgosk-ltLlNY0UKXQYcvnRkPKUfoecD39y07mSpK/exec?nombre=" + encodeURIComponent(nombre) + "&telefono=" + encodeURIComponent(telefono) + "&email=" + encodeURIComponent(email);    
         // Obtener el número de WhatsApp desde el parámetro en la URL
         var urlParams = new URLSearchParams(window.location.search);
         var numeroWhatsApp = urlParams.get('numero') || '573205479439'; // Número por defecto si no hay parámetro
