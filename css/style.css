@@ -1720,6 +1720,13 @@ color: #ffffff;
 	width: 100%;
 	height: auto;
   }
+  .iconwhatsap {
+	position:absolute;
+	width: 100%;
+  }
+  .iconwhatsap img{
+	position:absolute;
+  }
   @media (max-width: 768px) {
 	.footer-socials a {
 		display: inline-block;
